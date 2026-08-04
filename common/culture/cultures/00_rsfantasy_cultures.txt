@@ -1,0 +1,164 @@
+# SFantasy Mod - Unique cultures for each fantasy race
+# Each culture: unique heritage, language, 100% that race's ethnicity
+
+# Elven culture
+rsfantasy_elf = {
+	color = { 0.2 0.7 0.5 }
+
+	ethos = ethos_bureaucratic
+	heritage = heritage_rsfantasy_elf
+	language = language_rsfantasy_elf
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_storytellers
+		tradition_legalistic
+		tradition_forest_wardens
+	}
+	name_list = name_list_rsfantasy_elf
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { french_unit_gfx western_unit_gfx }
+	house_coa_frame = house_frame_03
+
+	ethnicities = {
+		100 = rsfantasy_elf
+	}
+}
+
+# Orc culture
+rsfantasy_orc = {
+	color = { 0.2 0.5 0.3 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_rsfantasy_orc
+	language = language_rsfantasy_orc
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_warrior_culture
+		tradition_stand_and_fight
+		tradition_quarrelsome
+	}
+	name_list = name_list_rsfantasy_orc
+
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	house_coa_frame = house_frame_05
+
+	ethnicities = {
+		100 = rsfantasy_orc
+	}
+}
+
+# Dwarven culture
+rsfantasy_dwarf = {
+	color = { 0.5 0.4 0.3 }
+
+	ethos = ethos_stoic
+	heritage = heritage_rsfantasy_dwarf
+	language = language_rsfantasy_dwarf
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_mountain_homes
+		tradition_metal_craftsmanship
+		tradition_ancient_miners
+	}
+	name_list = name_list_rsfantasy_dwarf
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { french_unit_gfx western_unit_gfx }
+	house_coa_frame = house_frame_03
+
+	ethnicities = {
+		100 = rsfantasy_dwarf
+	}
+}
+
+# Goblin culture
+rsfantasy_goblin = {
+	color = { 0.35 0.55 0.35 }
+
+	ethos = ethos_communal
+	heritage = heritage_rsfantasy_goblin
+	language = language_rsfantasy_goblin
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_swords_for_hire
+		tradition_forest_folk
+		tradition_hill_dwellers
+	}
+	name_list = name_list_rsfantasy_goblin
+
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	house_coa_frame = house_frame_05
+
+	ethnicities = {
+		100 = rsfantasy_goblin
+	}
+}
+
+# Uruk-Hai culture (gray-skinned bred orcs)
+rsfantasy_uruk_hai = {
+	color = { 0.25 0.4 0.35 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_rsfantasy_uruk_hai
+	language = language_rsfantasy_uruk_hai
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_warrior_culture
+		tradition_stand_and_fight
+		tradition_quarrelsome
+	}
+	name_list = name_list_rsfantasy_uruk_hai
+
+	coa_gfx = { norse_coa_gfx western_coa_gfx }
+	building_gfx = { norse_building_gfx }
+	clothing_gfx = { fp1_norse_clothing_gfx northern_clothing_gfx }
+	unit_gfx = { norse_unit_gfx }
+	house_coa_frame = house_frame_05
+
+	ethnicities = {
+		100 = rsfantasy_uruk_hai
+	}
+}
+
+# Dark Elven culture
+rsfantasy_dark_elf = {
+	color = { 0.5 0.3 0.5 }
+
+	ethos = ethos_bellicose
+	heritage = heritage_rsfantasy_dark_elf
+	language = language_rsfantasy_dark_elf
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_warrior_culture
+		tradition_stand_and_fight
+		tradition_eye_for_an_eye
+	}
+	name_list = name_list_rsfantasy_dark_elf
+
+	coa_gfx = { frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { french_unit_gfx western_unit_gfx }
+	house_coa_frame = house_frame_03
+
+	ethnicities = {
+		100 = rsfantasy_dark_elf
+	}
+}
