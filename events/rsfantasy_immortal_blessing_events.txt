@@ -1,0 +1,24 @@
+namespace = rsfantasy_immortal_blessing
+
+rsfantasy_immortal_blessing.0001 = {
+	hidden = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		every_living_character = {
+			limit = {
+				age >= 18
+				OR = {
+					has_trait = rsfantasy_elf
+					has_trait = rsfantasy_dwarf
+					has_trait = rsfantasy_dark_elf
+				}
+				NOT = { has_character_modifier = rsfantasy_immortal_blessing }
+			}
+			rsfantasy_grant_immortal_blessing_effect = yes
+		}
+	}
+}

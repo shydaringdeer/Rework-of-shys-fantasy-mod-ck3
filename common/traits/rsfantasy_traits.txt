@@ -1,0 +1,134 @@
+# SFantasy Mod - Traits for fantasy races
+
+rsfantasy_elf = {
+	category = physical
+	birth = 0
+	random = no
+
+	martial = 1
+	diplomacy = 2
+	intrigue = 1
+	stewardship = 2
+	learning = 3
+	prowess = 2
+	health = 2
+
+	attractiveness = 1.5
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_elf.dds
+}
+
+rsfantasy_orc = {
+	category = physical
+	birth = 0
+	random = no
+
+	martial = 4
+	prowess = 6
+	health = 2.5
+	dread_baseline = 15
+
+	learning = -2
+	diplomacy = -2
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_orc.dds
+}
+
+rsfantasy_dwarf = {
+	category = physical
+	birth = 0
+	random = no
+
+	stewardship = 4
+	prowess = 3
+	health = 3
+	same_opinion = 10
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_dwarf.dds
+}
+
+rsfantasy_goblin = {
+	category = physical
+	birth = 0
+	random = no
+
+	intrigue = 4
+	prowess = -1
+	health = 0.5
+	same_opinion = 10
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_goblin.dds
+}
+
+rsfantasy_dark_elf = {
+	category = physical
+	birth = 0
+	random = no
+
+	intrigue = 4
+	martial = 2
+	prowess = 3
+	learning = 2
+	health = 2
+	dread_baseline = 10
+
+	attractiveness = 1.2
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_dark_elf.dds
+}
+
+rsfantasy_uruk_hai = {
+	category = physical
+	birth = 0
+	random = no
+
+	martial = 5
+	prowess = 8
+	health = 3
+	dread_baseline = 20
+
+	learning = -3
+	diplomacy = -3
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_uruk_hai.dds
+}
+
+rsfantasy_summoned_warrior = {
+	category = fame
+	birth = 0
+	random = no
+
+	prowess = 4
+	martial = 2
+	same_opinion = 5
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_summoned_warrior.dds
+}
+
+rsfantasy_summoned_scholar = {
+	category = fame
+	birth = 0
+	random = no
+
+	learning = 4
+	stewardship = 2
+	same_opinion = 5
+
+	ruler_designer_cost = 0
+
+	icon = rsfantasy_summoned_scholar.dds
+}

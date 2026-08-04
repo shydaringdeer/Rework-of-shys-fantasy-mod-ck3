@@ -1,0 +1,30 @@
+# Vanilla on_birthday runs in character scope after age increments (see game birthday.txt).
+
+on_birthday = {
+	on_actions = {
+		rsfantasy_immortal_blessing_18th_birthday
+	}
+}
+
+rsfantasy_immortal_blessing_18th_birthday = {
+	effect = {
+		if = {
+			limit = {
+				age = 18
+				OR = {
+					has_trait = rsfantasy_elf
+					has_trait = rsfantasy_dwarf
+					has_trait = rsfantasy_dark_elf
+				}
+				NOT = { has_character_modifier = rsfantasy_immortal_blessing }
+			}
+			rsfantasy_grant_immortal_blessing_effect = yes
+		}
+	}
+}
+
+on_game_start_after_lobby = {
+	events = {
+		rsfantasy_immortal_blessing.0001
+	}
+}

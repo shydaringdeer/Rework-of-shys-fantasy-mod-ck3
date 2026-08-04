@@ -1,0 +1,7 @@
+rsfantasy_immortal_blessing = {
+	icon = health_positive
+	monthly_prestige = 0.25
+	health = 0.25
+
+	immortal = yes
+}

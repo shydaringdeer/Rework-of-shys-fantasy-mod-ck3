@@ -1,0 +1,11 @@
+rsfantasy_summon_warrior_template = {
+	age = { 18 35 }
+	martial = { 12 22 }
+	prowess = { 14 24 }
+}
+
+rsfantasy_summon_scholar_template = {
+	age = { 20 45 }
+	learning = { 14 24 }
+	stewardship = { 10 18 }
+}
