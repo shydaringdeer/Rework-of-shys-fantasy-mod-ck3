@@ -1,0 +1,390 @@
+# SFantasy Mod - Religions for each fantasy race
+# Uses pagan family, each race has its own faith with appropriate tenets
+
+rsfantasy_elf_religion = {
+	family = rf_pagan
+	piety_icon_group = pagan
+	graphical_faith = pagan_gfx
+	pagan_roots = yes
+	doctrine = pagan_hostility_doctrine
+
+	doctrine = doctrine_polytheist
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_male_dominated
+	doctrine = doctrine_pluralism_pluralistic
+	doctrine = doctrine_theocracy_temporal
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_cousins
+	doctrine = doctrine_homosexuality_crime
+	doctrine = doctrine_adultery_men_shunned
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_deviancy_crime
+	doctrine = doctrine_witchcraft_accepted
+	doctrine = doctrine_clerical_function_recruitment
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = doctrine_pilgrimage_encouraged
+	doctrine = doctrine_funeral_bewailment
+	doctrine = doctrine_no_anointment
+
+	traits = { virtues = { temperate just patient } sins = { greedy arbitrary wrathful } }
+
+	custom_faith_icons = {
+		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5
+		custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10
+		custom_faith_fp1_yggdrasil
+	}
+
+	holy_order_names = { { name = "holy_order_rsfantasy_elf_guardians" } }
+	holy_order_maa = { bowmen }
+
+	localization = {
+		HighGodName = rsfantasy_elf_high_god_name
+		HighGodName2 = rsfantasy_elf_high_god_name
+		HighGodNamePossessive = rsfantasy_elf_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_THEY
+		HighGodHerselfHimself = CHARACTER_THEMSELF
+		HighGodHerHis = CHARACTER_HERHIS_THEIR
+		HighGodHerHim = CHARACTER_HERHIM_THEM
+		PantheonTerm = religion_the_gods
+		PantheonTerm2 = religion_the_gods_2
+		PantheonTerm3 = religion_the_gods_3
+		PantheonTermHasHave = pantheon_term_have
+		GoodGodNames = { rsfantasy_elf_good_god_1 rsfantasy_elf_good_god_2 rsfantasy_elf_good_god_3 }
+		DevilName = paganism_devil_name
+		DevilNamePossessive = paganism_devil_name_possessive
+		EvilGodNames = { paganism_evil_god_decay paganism_evil_god_drought }
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorship2 = paganism_house_of_worship_2
+		HouseOfWorship3 = paganism_house_of_worship_3
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = rsfantasy_elf_religious_symbol
+		ReligiousText = paganism_religious_text
+		ReligiousHeadName = rsfantasy_elf_priest
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		PriestMale = rsfantasy_elf_priest
+		PriestMalePlural = rsfantasy_elf_priest_plural
+		PriestFemale = rsfantasy_elf_priest
+		PriestFemalePlural = rsfantasy_elf_priest_plural
+		BishopMale = rsfantasy_elf_priest
+		BishopMalePlural = rsfantasy_elf_priest_plural
+		BishopFemale = rsfantasy_elf_priest
+		BishopFemalePlural = rsfantasy_elf_priest_plural
+		DivineRealm = paganism_divine_realm
+		PositiveAfterLife = paganism_afterlife
+		NegativeAfterLife = paganism_afterlife
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+
+	faiths = {
+		rsfantasy_elf_faith = {
+			color = hsv { 0.2 0.7 0.5 }
+			icon = rsfantasy_elf_faith
+			reformed_icon = rsfantasy_elf_faith_reformed
+			holy_site = rome
+			holy_site = athens
+			holy_site = alexandria
+			holy_site = olympus
+			holy_site = jerusalem
+			doctrine = unreformed_faith_doctrine
+			doctrine = tenet_sacred_childbirth
+			doctrine = tenet_ancestor_worship
+			doctrine = tenet_communal_identity
+		}
+	}
+}
+
+rsfantasy_orc_religion = {
+	family = rf_pagan
+	piety_icon_group = pagan
+	graphical_faith = pagan_gfx
+	pagan_roots = yes
+	doctrine = pagan_hostility_doctrine
+
+	doctrine = doctrine_polytheist
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_male_dominated
+	doctrine = doctrine_pluralism_fundamentalist
+	doctrine = doctrine_theocracy_temporal
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_cousins
+	doctrine = doctrine_homosexuality_crime
+	doctrine = doctrine_adultery_men_shunned
+	doctrine = doctrine_adultery_women_crime
+	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_deviancy_crime
+	doctrine = doctrine_witchcraft_accepted
+	doctrine = doctrine_clerical_function_recruitment
+	doctrine = doctrine_clerical_gender_male_only
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = doctrine_pilgrimage_encouraged
+	doctrine = doctrine_funeral_cremation
+	doctrine = doctrine_no_anointment
+
+	traits = { virtues = { brave wrathful zealous } sins = { craven forgiving compassionate } }
+
+	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
+
+	holy_order_names = { { name = "holy_order_rsfantasy_orc_warband" } }
+	holy_order_maa = { light_cavalry }
+
+	localization = {
+		HighGodName = rsfantasy_orc_high_god_name
+		HighGodNamePossessive = rsfantasy_orc_high_god_name_possessive
+		PantheonTerm = religion_the_gods
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = rsfantasy_orc_religious_symbol
+		PriestMale = rsfantasy_orc_priest
+		PriestMalePlural = rsfantasy_orc_priest_plural
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+
+	faiths = {
+		rsfantasy_orc_faith = {
+			color = hsv { 0.2 0.5 0.3 }
+			icon = rsfantasy_orc_faith
+			reformed_icon = rsfantasy_orc_faith_reformed
+			holy_site = uppsala
+			holy_site = paderborn
+			holy_site = jorvik
+			holy_site = ranaheim
+			holy_site = konugardr
+			doctrine = unreformed_faith_doctrine
+			doctrine = tenet_warmonger
+			doctrine = tenet_ancestor_worship
+			doctrine = tenet_human_sacrifice
+		}
+	}
+}
+
+rsfantasy_dwarf_religion = {
+	family = rf_pagan
+	piety_icon_group = pagan
+	graphical_faith = pagan_gfx
+	pagan_roots = yes
+	doctrine = pagan_hostility_doctrine
+
+	doctrine = doctrine_polytheist
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_male_dominated
+	doctrine = doctrine_pluralism_pluralistic
+	doctrine = doctrine_theocracy_temporal
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_cousins
+	doctrine = doctrine_homosexuality_crime
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_deviancy_shunned
+	doctrine = doctrine_witchcraft_shunned
+	doctrine = doctrine_clerical_function_recruitment
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = doctrine_pilgrimage_encouraged
+	doctrine = doctrine_funeral_cremation
+	doctrine = doctrine_no_anointment
+
+	traits = { virtues = { diligent temperate stubborn } sins = { greedy lazy gluttonous } }
+
+	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
+
+	holy_order_names = { { name = "holy_order_rsfantasy_dwarf_guard" } }
+	holy_order_maa = { heavy_infantry }
+
+	localization = {
+		HighGodName = rsfantasy_dwarf_high_god_name
+		HighGodNamePossessive = rsfantasy_dwarf_high_god_name_possessive
+		PantheonTerm = religion_the_gods
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = rsfantasy_dwarf_religious_symbol
+		PriestMale = rsfantasy_dwarf_priest
+		PriestMalePlural = rsfantasy_dwarf_priest_plural
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+
+	faiths = {
+		rsfantasy_dwarf_faith = {
+			color = hsv { 0.5 0.4 0.3 }
+			icon = rsfantasy_dwarf_faith
+			reformed_icon = rsfantasy_dwarf_faith_reformed
+			holy_site = rome
+			holy_site = cologne
+			holy_site = constantinople
+			holy_site = konugardr
+			holy_site = uppsala
+			doctrine = unreformed_faith_doctrine
+			doctrine = tenet_ancestor_worship
+			doctrine = tenet_esotericism
+			doctrine = tenet_communal_identity
+		}
+	}
+}
+
+rsfantasy_goblin_religion = {
+	family = rf_pagan
+	piety_icon_group = pagan
+	graphical_faith = pagan_gfx
+	pagan_roots = yes
+	doctrine = pagan_hostility_doctrine
+
+	doctrine = doctrine_polytheist
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_equal
+	doctrine = doctrine_pluralism_pluralistic
+	doctrine = doctrine_theocracy_temporal
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_cousins
+	doctrine = doctrine_homosexuality_crime
+	doctrine = doctrine_adultery_men_accepted
+	doctrine = doctrine_adultery_women_accepted
+	doctrine = doctrine_kinslaying_dynasty_crime
+	doctrine = doctrine_deviancy_accepted
+	doctrine = doctrine_witchcraft_accepted
+	doctrine = doctrine_clerical_function_recruitment
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = doctrine_pilgrimage_encouraged
+	doctrine = doctrine_funeral_burial
+	doctrine = doctrine_no_anointment
+
+	traits = { virtues = { cynical greedy ambitious } sins = { compassionate just content } }
+
+	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
+
+	holy_order_names = { { name = "holy_order_rsfantasy_goblin_skulkers" } }
+	holy_order_maa = { skirmishers }
+
+	localization = {
+		HighGodName = rsfantasy_goblin_high_god_name
+		HighGodNamePossessive = rsfantasy_goblin_high_god_name_possessive
+		PantheonTerm = religion_the_gods
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = rsfantasy_goblin_religious_symbol
+		PriestMale = rsfantasy_goblin_priest
+		PriestMalePlural = rsfantasy_goblin_priest_plural
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+
+	faiths = {
+		rsfantasy_goblin_faith = {
+			color = hsv { 0.35 0.55 0.35 }
+			icon = rsfantasy_goblin_faith
+			reformed_icon = rsfantasy_goblin_faith_reformed
+			holy_site = jorvik
+			holy_site = ranaheim
+			holy_site = paderborn
+			holy_site = uppsala
+			holy_site = kent
+			doctrine = unreformed_faith_doctrine
+			doctrine = tenet_esotericism
+			doctrine = tenet_ritual_cannibalism
+			doctrine = tenet_ancestor_worship
+		}
+	}
+}
+
+rsfantasy_dark_elf_religion = {
+	family = rf_pagan
+	piety_icon_group = pagan
+	graphical_faith = pagan_gfx
+	pagan_roots = yes
+	doctrine = pagan_hostility_doctrine
+
+	doctrine = doctrine_polytheist
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_equal
+	doctrine = doctrine_pluralism_fundamentalist
+	doctrine = doctrine_theocracy_temporal
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_legitimization
+	doctrine = doctrine_consanguinity_cousins
+	doctrine = doctrine_homosexuality_crime
+	doctrine = doctrine_adultery_men_accepted
+	doctrine = doctrine_adultery_women_accepted
+	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_deviancy_accepted
+	doctrine = doctrine_witchcraft_accepted
+	doctrine = doctrine_clerical_function_recruitment
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+	doctrine = doctrine_pilgrimage_encouraged
+	doctrine = doctrine_funeral_bewailment
+	doctrine = doctrine_no_anointment
+
+	traits = { virtues = { cynical deceitful ambitious } sins = { compassionate forgiving honest } }
+
+	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
+
+	holy_order_names = { { name = "holy_order_rsfantasy_dark_elf_spiders" } }
+	holy_order_maa = { bowmen }
+
+	localization = {
+		HighGodName = rsfantasy_dark_elf_high_god_name
+		HighGodNamePossessive = rsfantasy_dark_elf_high_god_name_possessive
+		PantheonTerm = religion_the_gods
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = rsfantasy_dark_elf_religious_symbol
+		PriestMale = rsfantasy_dark_elf_priest
+		PriestMalePlural = rsfantasy_dark_elf_priest_plural
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+
+	faiths = {
+		rsfantasy_dark_elf_faith = {
+			color = hsv { 0.5 0.3 0.5 }
+			icon = rsfantasy_dark_elf_faith
+			reformed_icon = rsfantasy_dark_elf_faith_reformed
+			holy_site = alexandria
+			holy_site = constantinople
+			holy_site = antioch
+			holy_site = rome
+			holy_site = athens
+			doctrine = unreformed_faith_doctrine
+			doctrine = tenet_ritual_cannibalism
+			doctrine = tenet_esotericism
+			doctrine = tenet_communal_identity
+		}
+	}
+}
