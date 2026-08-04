@@ -1,0 +1,272 @@
+# Name lists for SFantasy fantasy race cultures
+
+# Elven culture
+name_list_rsfantasy_elf = {
+
+	# Male names
+	male_names = {
+		Aerandir Alatar Amroth Beleg Celebrimbor Celeborn Cirdan Elrond
+		Elros Fingolfin Finrod Glorfindel Haldir Legolas Lindir Orophin Thranduil
+		Erestor Gildor Laegolas Maeglin Oropher Saeros Turgon Angrod
+		Celegorm Curufin Daeron Denethor Ecthelion Edrahil Egalmoth
+		Elemmire Elladan Elrohir Eol Feanor Fingon Finarfin Fingolfin
+		Gil-galad Gwindor Imrahil Ingwe Elu
+		Maedhros Maglor Orodreth Pengolodh Rumil Thingol Tuor Voronwe
+		Beor Beren Carcharoth Huor Hurin Turin Turambar Eladar
+		Amras Amrod Caranthir Duilin Enel Enelye Galdor Guilin
+		Helkaraxe Imin Iminye Ingwion Lenwe Mahtan Nandor
+		Olwe Mablung Cuthalion Anardil Amlach Arminas Gelmir
+		Galdor Guilin Falathar Cemendur
+		Laurefindel Caladbolg Eluchil Aranruth Cirdacil Findecano
+		Laegolas Laeron Malgalad Oropherion Pelendur Romestamo
+		Tarondor Telumehtar Valandil Voronwë Ciryon Aratan
+	}
+
+	# Female names
+	female_names = {
+		Arwen Celebrian Galadriel Idril Luthien Melian Nimloth Tauriel
+		Elwing Finduilas Lalaith Nienor Elenwe Earwen Indis Nerdanel
+		Aredhel Elenwe Emeldir Eowyn Andreth Galadriel Idril Lalwen
+		Morwen Niessa Rian Varda Yavanna Vaire Vana
+		Anaire Earien Irime Miriel Nerwen Elbereth Luthien Tinuviel
+		Earwen Eldalote Elenwe Teleri
+		Findis Faniel Lalwen Nimloth Doriath Uinen Este Nessa
+		Vanima Faelivrin Nellas Tinuviel Epesse
+		Elanor Gilraen Ioreth Lindiriel Lossiel Mithrellas Nimrodel
+		Ríaniel Silmarien Tar-Ancalimë Tar-Telperiën Vardamir
+		Almiel Arien Calathiel Elwinga Faelivrin Laurelin
+	}
+
+	# Dynasty names (plain names only, no "of ...")
+	dynasty_names = {
+		"Silvan" "Greenleaf" "Moonwhisper" "Starweaver" "Ithilien" "Noldor"
+		"Feanorion" "Silverthorn" "Sunstrider" "Moonblade" "Dawnstrider"
+		"Faelorn" "Evergreen" "Starborne" "Silverlode" "Goldenwood" "Starlight"
+		"Nightbreeze" "Sunarrow" "Moonbow" "Stargazer" "Windrider" "Leafwhisper" "Dawnbringer"
+		"Starfall" "Moonveil" "Silvermere" "Goldengrove" "Thornwood" "Brightleaf"
+		"Lorien" "Rivendell" "Mirkwood" "Lindon" "Doriath" "Gondolin"
+		"Nargothrond" "Himring" "Dorthonion" "Hithlum" "Imladris"
+		"Eldamar" "Quenya" "Sindar" "Teleri" "Vanyar" "Noldorin"
+		"Silverthorn" "Nightbloom" "Dawnblade" "Starcrest" "Moonhollow"
+		"Brightdawn" "Evenstar" "Highleaf" "Lightbringer" "Mistwalker"
+		"Paleblade" "Quickbeam" "Riverwind" "Shadowmere" "Snowthorn"
+		"Swiftarrow" "Trueheart" "Wingfoot" "Woodhollow" "Yavanna"
+	}
+}
+
+# Orc culture
+name_list_rsfantasy_orc = {
+
+	# Male names
+	male_names = {
+		Borgakh Brognak Durotan Grommash Guldan Kargath Ogrim Orgrim
+		Thrall Garrosh Blackhand Doomhammer Garona Grom Gorbash Thok
+		Drek'Thar Gar'Thok Kilrogg Ner'zhul Orgrimm Broxigar Gar'rok
+		Mannoroth Saurfang Rend Maim Blackhand Blackrock Gorehowl
+		Rexxar Reghar Varok Dranosh Brox
+		Uthul Mok'nathal Grom Hellscream Orgrim Doomhammer
+		Gorbash Cho'gall Fenris Malkorok Grimtotem Nazgrel
+		Rend Maim Shagrat Ugluk Snaga Gorbag Grishnakh Azog Bolg
+		Gothmog Snaga Gorbag Shagrat Ugluk Grishnakh Lagduf
+		Muzgash Radbug
+		Durzag Grommok Kargran Morglum Raznag Skullbash Thrak
+		Urzog Zograk Bargol Drogath Gromkor Hargrim Krazak
+		Morgran Rukthor Thragash Ugthor Zangor
+	}
+
+	# Female names
+	female_names = {
+		Draka Garona Griselda Geyah Aggra Uruka Morah Zaela Wygra
+		Griska Kashur Urukha Rukka Thura Zagra Misha Zevora
+		Nazgrel Borag Grisel
+		Borga Drakka Grizelda Kagra Morgha Rukka Thraka Ugrala
+		Zagraga Borgath Dragga Gromka Kargra Mogra Ruktha
+		Snaggra Thrakka Ugra Zogra
+	}
+
+	# Dynasty names (plain names only, no "of ...")
+	dynasty_names = {
+		"Blackrock" "Warsong" "Frostwolf" "Bloodfang" "Ironhide"
+		"Bonegrinder" "Skullcrusher" "Burning Blade" "Shadow Council"
+		"Stormreaver" "Bleeding Hollow" "Black Tooth Grin" "Shattered Hand"
+		"Thunderlord" "Twilight's Hammer" "Dragonmaw" "Laughing Skull"
+		"Boulderfist" "Iron Fist" "Ragefire" "Bloodmoon" "Grimjaw" "Skullsplitter" "Warmonger"
+		"Ironstorm" "Battlescar" "Gorefist" "Warstomp" "Thunderfist" "Shatterskull"
+		"Bloodaxe" "Ironjaw" "Grimskull" "Redblade" "Bladewind" "Hordebreaker"
+		"Warpaint" "Bonechewer" "Gorehowl" "Doomfist" "Ragewind" "Ironfury"
+		"Blacktooth" "Skulltaker" "Warscream" "Bloodfist" "Grimtotem"
+		"Rageblade" "Ironclaw" "Goretooth" "Battlescar" "Warhammer"
+		"Skullgrinder" "Bloodfury" "Darkstorm" "Frostfang" "Shadowfist"
+		"Thunderclaw" "Warpath" "Bonebreaker" "Grimblade" "Redfist"
+	}
+}
+
+# Dwarven culture
+name_list_rsfantasy_dwarf = {
+
+	# Male names
+	male_names = {
+		Balin Bifur Bofur Bombur Dain Dwalin Gimli Gloin Oin Ori
+		Thorin Thrain Fili Kili Fundin Groin Nori Dori Durin
+		Gimrik Thror Frerin Farin Floi Loni Nali Bruenor
+		Bundin Garin Garmrun Gundren Harbek Mardred Thibbledorf
+		Brand Bain Borin Bror Farin Floin Frar Frerin Gror
+		Lofar Loni Mim Navi Nain Telchar Azaghal Thror
+		Bard Bain Brand Thorin Stonehelm Tombel Bariken
+		Beloril Bruennor Pwent Gutbuster Stoneworthy Hammershield
+		Ironpick Flintstone Coppervein Mithrilarm
+		Barak Delbereth Dolgrim Dolthar Gandalug Harbromm
+		Kildrak Kundrak Morgran Rurik Stonepike Tordek
+		Bruenor Battlehammer Gandalug Gundren Mardred
+		Thibbledorf Pwent Gutbuster Stoneworthy Hammershield
+	}
+
+	# Female names
+	female_names = {
+		Dis Kathrin Hild Dagny Sigrid Brynhild Helja Thora
+		Mardred Frida Hrefna Katla Ragnhild Amethyst Garnet
+		Bardryn Beltris Esmeralda Felosial Gwynn Krystyna Riswynn
+		Rubiesa Torbera Fimbultyr Gudrid Halla Thora Ragnhild
+		Astrid Bergdis Eyvor Geira Gunnhild Tanneria Gern Wistala Delbera Stonepike Kundrak
+		Bardryn Beltris Esmeralda Felosial Gwynn Krystyna Riswynn
+		Eldeth Fidelia Helja Kathra Liftrasa Maegla Riswynn
+		Torbera Torgga Vilma Amberghast Copperkettle Mithralheart
+	}
+
+	# Dynasty names (plain names only, no "of ...")
+	dynasty_names = {
+		"Bronzebeard" "Ironfoot" "Stonehammer" "Firebeard" "Battlehammer" "Longbeard"
+		"Stonefist" "Broadbeam" "Ironfist" "Stiffbeard" "Blacklock"
+		"Anvilmar" "Frostbeard" "Goldseeker" "Mithrilhammer" "Hammerfist" "Copperkeg" "Axehelm"
+		"Ironforge" "Deepdelver" "Stonehammer" "Flintfinger"
+		"Erebor" "Khaz-Modan" "Nogrod" "Belegost" "Moria" "Khazad-dum"
+		"Runebeard" "Coppervein" "Steelhammer" "Orebreaker" "Anvilward"
+		"Stonewarden" "Ironvein" "Goldhammer" "Flintbeard" "Caskbreaker"
+		"Boulderfist" "Craghelm" "Mithrilvein" "Silverbeard" "Coalheart"
+		"Bouldershoulder" "Copperpot" "Deepdelver" "Granitefist" "Hammerfall"
+		"Ironvein" "Orebeard" "Rockseeker" "Steelbrow" "Stonefist"
+		"Thunderanvil" "Tunnelrunner" "Underforge" "Warhammer" "Gemseeker"
+	}
+}
+
+# Goblin culture
+name_list_rsfantasy_goblin = {
+
+	# Male names
+	male_names = {
+		Grik Nix Sprocket Snaggle Goblix Slitch Tikkit Vorp Nub Nazz
+		Snaggletooth Snikch Git Grot Nasty Skarsnik Grizelda Grom
+		Brix Fizzbang Grek Snotruk Drizzlik Skab Gribble Snarl
+		Vex Spindlecrank Tinkertot Grubnick Sprocket Geargrind
+		Zik Ratchet Crank Wrench Bolt Cog Drix Drazz Zibb
+		Splat Sprog Stikkit Gazgak
+		Mekkatorque Hobart Grapplehammer
+		Rigger Cogspin Gizmoplex
+		Brix Fizz Snag Grikkit Nazzik Sprok Tikk Vorpik Zibb
+		Cogsworth Grubnik Ratchet Sprocket Spindle Tinker Wrench
+		Drizlik Fizzbang Gribble Snarl Vex Zik
+	}
+
+	# Female names
+	female_names = {
+		Fizzle Grixel Nixie Sprocket Tikka Vex Zizz Snap Grikka
+		Nazgob Skab Sneek Fizzlepop Sparkle Cogette Ratchetta Tinkerbell Grizel Gribble
+		Gobberta Tikk Snarl Snap
+		Fizzle Grix Nixie Sprokka Tinka Vexa Zizza Coggie
+		Grikka Nazzob Ratchetta Sprocket Snap Gribbette
+		Boltie Cogette Geargrind Spindle Tinker Zizz
+	}
+
+	# Dynasty names (plain names only, no "of ...")
+	dynasty_names = {
+		"Snaggle" "Nix" "Sprocket" "Grik" "Snaggletooth"
+		"Quickfinger" "Shinygrab" "Copperfist" "Geargrind" "Spindlecrank" "Tinkertot" "Gribble" "Fizzbang"
+		"Greasefinger" "Steampop" "Rustbolt" "Cogsworthy" "Greasefang"
+		"Oilfinger" "Springcoil" "Geargrinder" "Copperpot" "Ticktock"
+		"Cogwheel" "Ratchethead" "Sprocketspine" "Geargrip" "Copperpin"
+		"Greasebelly" "Tinkerthumb" "Wiretwist" "Cogbite" "Spindlefoot"
+		"Boltgrinder" "Springjaw" "Copperclaw" "Gizmofist" "Wrenchsnap"
+		"Boltjaw" "Cogspinner" "Gearlock" "Greasepit" "Rustfang"
+		"Sprocketjaw" "Tinkerclaw" "Wiregut" "Copperbelly" "Gizmogrip"
+		"Ratchetear" "Springfoot" "Wrenchbite" "Cogteeth" "Oilbelly"
+	}
+}
+
+# Uruk-Hai culture (gray-skinned bred orcs)
+name_list_rsfantasy_uruk_hai = {
+
+	# Male names
+	male_names = {
+		Ugluk Grishnakh Sharku Shagrat Gorbag Lagduf Radbug Muzgash
+		Lugdush Mauhur Goroth Dushgoi Snaga Gorbag Ufthak
+		Borgakh Brognak Durotan Grommash Kargath Ogrim Orgrim
+		Thrall Garrosh Blackhand Doomhammer Grom Gorbash Thok
+		Gothmog Azog Bolg Gorbag Shagrat Ugluk Grishnakh
+		Rend Maim Blackhand Rexxar Varok Saurfang Nazgrel
+		Lugdush Mauhur Goroth Dushgoi Ufthak Sharku
+		Gothmog Azog Bolg Shagrat Gorbag Ugluk Grishnakh
+		Snaga Muzgash Radbug Lagduf Thrak Uruk
+	}
+
+	# Female names
+	female_names = {
+		Draka Garona Griselda Geyah Aggra Uruka Morah Zaela Wygra
+		Griska Kashur Rukka Thura Zagra Misha Zevora Nazgrel Borag
+		Borga Drakka Grizelda Kagra Morgha Rukka Thraka Ugrala
+		Zagraga Gromka Kargra Mogra Ruktha Snaggra Thrakka Ugra
+	}
+
+	# Dynasty names (plain names only, no "of ...")
+	dynasty_names = {
+		"Black Hand" "White Hand" "Iron Fist" "Blackrock" "Warsong" "Frostwolf" "Bloodfang" "Ironhide"
+		"Bonegrinder" "Skullcrusher" "Burning Blade" "Stormreaver" "Bleeding Hollow" "Shattered Hand"
+		"Thunderlord" "Dragonmaw" "Warstomp" "Gorefist" "Red Eye" "Gray Host"
+		"Ironstorm" "Battlescar" "Grimjaw" "Skullsplitter" "Warmonger" "Bloodmoon"
+		"Doomfist" "Warpaint" "Bonechewer" "Ragewind" "Ironfury" "Blacktooth"
+		"Skulltaker" "Warscream" "Bloodfist" "Grimtotem" "Isengard" "Mordor"
+		"Grayblade" "Ironhost" "Pitfighter" "Slagfist" "Warhost"
+		"Bonefist" "Doomclaw" "Grimhost" "Redhand" "Stormfist"
+	}
+}
+
+# Dark Elven culture
+name_list_rsfantasy_dark_elf = {
+
+	# Male names
+	male_names = {
+		Drizzt Jarlaxle Gromph Vierna Zaknafein Dinin Nalfein Dantrag
+		Berg'inyon Pharaun Valas Halt'elest Ryld Valeth Rizzen
+		Tos'un Andzrel Sabal Jeggred Entreri Kurth
+		K'yorl Odran Nimor Imphrael Tzirik Valas Hune
+		Rizzen Kaanyr Vhok Ryld Argith Halt'elest Zsz
+		Jarlaxle Gromph Pharaun Valas Ryld Valeth
+		Nimor Imphrael Tzirik Hune Sabal Jeggred Entreri
+		Alton Kurth Ravel Xarann Zek Zilvyn
+	}
+
+	# Female names
+	female_names = {
+		Liriel Vierna Quenthel Triel Mez'Barris Maleszz Drisinil Shyntlara
+		Halessa Faeryl Yvonnel Malice Sos'Umptu Bladen'Kerst
+		Halisstra Minolin Fey Saribel Jaelre Zilvra Shadowsong
+		Danifae Aliisza Halani Shyndra Quilue Velkyn
+		Liriel Quenthel Triel Mez'Barris Drisinil Shyntlara
+		Halessa Faeryl Yvonnel Malice Halisstra Minolin Fey
+		Saribel Jaelre Zilvra Danifae Aliisza Shyndra
+		Eclavdra Laele Jhaeldril Qilue Velkyn
+	}
+
+	# Dynasty names (plain names only, no "of ...")
+	dynasty_names = {
+		"Do'Urden" "Baenre" "Xilarn" "Mizzrym" "Blackbrow" "Shadowwhisper" "Fey-Branche"
+		"DeVir" "Hun'ett" "Jaelre" "Melarn" "Oblodra" "Shadowblade" "Nightwhisper"
+		"Arabani" "Spiderkiss" "Shadowvale" "Drow" "Nightspider" "Blackvein" "Deepwhisper"
+		"Menzoberranzan" "Ched Nasad" "Ust Natha" "Darklake"
+		"Spiderfang" "Shadowcrest" "Venomvein" "Twilightblade" "Nightshade"
+		"Webweaver" "Darkwhisper" "Underdark" "Blackwidow" "Silkthorn"
+		"Moonless" "Starless" "Abyssal" "Voidcrest" "Gloomveil"
+		"Darkfang" "Gloomcrest" "Nightvein" "Shadowthorn" "Spiderbite"
+		"Voidblade" "Abysscrest" "Twilightfang" "Blackthorn" "Silkfang"
+		"Venomcrest" "Shadowfang" "Duskblade" "Nightfang" "Voidveil"
+	}
+}

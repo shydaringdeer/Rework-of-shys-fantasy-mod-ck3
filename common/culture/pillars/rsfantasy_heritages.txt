@@ -1,0 +1,31 @@
+# SFantasy Mod - Custom heritages for each fantasy race
+
+heritage_rsfantasy_elf = {
+	type = heritage
+	audio_parameter = european
+}
+
+heritage_rsfantasy_orc = {
+	type = heritage
+	audio_parameter = european
+}
+
+heritage_rsfantasy_dwarf = {
+	type = heritage
+	audio_parameter = european
+}
+
+heritage_rsfantasy_goblin = {
+	type = heritage
+	audio_parameter = european
+}
+
+heritage_rsfantasy_dark_elf = {
+	type = heritage
+	audio_parameter = european
+}
+
+heritage_rsfantasy_uruk_hai = {
+	type = heritage
+	audio_parameter = european
+}

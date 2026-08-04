@@ -1,0 +1,134 @@
+# SFantasy Mod - Adopt fantasy race governments
+# Elf/Dwarf: county+. Orc/Goblin: kingdom+. Must be feudal or clan. Adopting only changes government type; use the succession tab for laws. AI will never take.
+
+adopt_high_elvish_feudalism_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = adopt_high_elvish_feudalism_decision_desc
+	ai_check_interval = 0
+
+	is_shown = {
+		OR = { has_trait = rsfantasy_elf has_trait = rsfantasy_dark_elf }
+		highest_held_title_tier >= tier_county
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+		NOT = { has_government = high_elf_feudal_government }
+	}
+
+	is_valid = {
+		OR = { has_trait = rsfantasy_elf has_trait = rsfantasy_dark_elf }
+		highest_held_title_tier >= tier_county
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+	}
+	cost = {}
+
+	effect = {
+		change_government = high_elf_feudal_government
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+adopt_orcish_warband_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = adopt_orcish_warband_decision_desc
+	ai_check_interval = 0
+
+	is_shown = {
+		OR = { has_trait = rsfantasy_orc has_trait = rsfantasy_uruk_hai }
+		highest_held_title_tier >= tier_kingdom
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+		NOT = { has_government = orcish_warband_government }
+	}
+
+	is_valid = {
+		OR = { has_trait = rsfantasy_orc has_trait = rsfantasy_uruk_hai }
+		highest_held_title_tier >= tier_kingdom
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+	}
+	cost = {}
+
+	effect = {
+		change_government = orcish_warband_government
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+adopt_dwarven_hold_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = adopt_dwarven_hold_decision_desc
+	ai_check_interval = 0
+
+	is_shown = {
+		has_trait = rsfantasy_dwarf
+		highest_held_title_tier >= tier_county
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+		NOT = { has_government = dwarven_hold_government }
+	}
+
+	is_valid = {
+		has_trait = rsfantasy_dwarf
+		highest_held_title_tier >= tier_county
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+	}
+	cost = {}
+
+	effect = {
+		change_government = dwarven_hold_government
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+adopt_goblin_warren_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = adopt_goblin_warren_decision_desc
+	ai_check_interval = 0
+
+	is_shown = {
+		has_trait = rsfantasy_goblin
+		highest_held_title_tier >= tier_kingdom
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+		NOT = { has_government = goblin_warren_government }
+	}
+
+	is_valid = {
+		has_trait = rsfantasy_goblin
+		highest_held_title_tier >= tier_kingdom
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+		}
+	}
+	cost = {}
+
+	effect = {
+		change_government = goblin_warren_government
+	}
+
+	ai_will_do = { base = 0 }
+}
