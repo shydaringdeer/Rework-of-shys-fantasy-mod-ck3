@@ -1,0 +1,20 @@
+l_english:
+	high_elf_feudal_government:0 "High Elvish Feudalism"
+	high_elf_feudal_government_adjective:0 "High Elvish"
+	high_elf_feudal_government_realm:0 "High Elvish Realm"
+	high_elf_feudal_government_desc:0 "A realm ruled under the ancient traditions of the Elven lords, emphasizing wisdom, martial grace, and prestige."
+
+	orcish_warband_government:0 "Orcish Warband"
+	orcish_warband_government_adjective:0 "Warband"
+	orcish_warband_government_realm:0 "Orcish Warband Realm"
+	orcish_warband_government_desc:0 "A realm forged in battle and ruled by the strongest warriors, focusing on martial prowess and conquest."
+
+	dwarven_hold_government:0 "Dwarven Hold"
+	dwarven_hold_government_adjective:0 "Dwarven"
+	dwarven_hold_government_realm:0 "Dwarven Hold Realm"
+	dwarven_hold_government_desc:0 "A underground fortress domain focused on stewardship, stonecraft, and ancient lineage."
+
+	goblin_warren_government:0 "Goblin Warren"
+	goblin_warren_government_adjective:0 "Goblin"
+	goblin_warren_government_realm:0 "Goblin Warren Realm"
+	goblin_warren_government_desc:0 "A dense and chaotic subterranean realm relying on intrigue, cunning tricks, and survival."
