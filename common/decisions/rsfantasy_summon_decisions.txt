@@ -1,0 +1,349 @@
+# SFantasy Mod - Summon fantasy race characters to court
+# Player-only decisions. Cost: gold and prestige. Opens event to choose male/female.
+
+summon_elf_to_court_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = minor
+
+	desc = summon_elf_to_court_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ai = no
+		exists = capital_province
+	}
+
+	is_valid = {
+		is_ai = no
+		gold >= 25
+		prestige >= 25
+	}
+
+	cost = {
+		gold = 25
+		prestige = 25
+	}
+
+	effect = {
+		trigger_event = rsfantasy_summon.0001
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+summon_orc_to_court_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = minor
+
+	desc = summon_orc_to_court_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ai = no
+		exists = capital_province
+	}
+
+	is_valid = {
+		is_ai = no
+		gold >= 25
+		prestige >= 25
+	}
+
+	cost = {
+		gold = 25
+		prestige = 25
+	}
+
+	effect = {
+		trigger_event = rsfantasy_summon.0002
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+summon_dwarf_to_court_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = minor
+
+	desc = summon_dwarf_to_court_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ai = no
+		exists = capital_province
+	}
+
+	is_valid = {
+		is_ai = no
+		gold >= 25
+		prestige >= 25
+	}
+
+	cost = {
+		gold = 25
+		prestige = 25
+	}
+
+	effect = {
+		trigger_event = rsfantasy_summon.0003
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+summon_goblin_to_court_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = minor
+
+	desc = summon_goblin_to_court_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ai = no
+		exists = capital_province
+	}
+
+	is_valid = {
+		is_ai = no
+		gold >= 25
+		prestige >= 25
+	}
+
+	cost = {
+		gold = 25
+		prestige = 25
+	}
+
+	effect = {
+		trigger_event = rsfantasy_summon.0004
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+summon_dark_elf_to_court_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = minor
+
+	desc = summon_dark_elf_to_court_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ai = no
+		exists = capital_province
+	}
+
+	is_valid = {
+		is_ai = no
+		gold >= 25
+		prestige >= 25
+	}
+
+	cost = {
+		gold = 25
+		prestige = 25
+	}
+
+	effect = {
+		trigger_event = rsfantasy_summon.0005
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+summon_uruk_hai_to_court_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = minor
+
+	desc = summon_uruk_hai_to_court_decision_desc
+
+	ai_check_interval = 0
+
+	is_shown = {
+		is_ai = no
+		exists = capital_province
+	}
+
+	is_valid = {
+		is_ai = no
+		gold >= 25
+		prestige >= 25
+	}
+
+	cost = {
+		gold = 25
+		prestige = 25
+	}
+
+	effect = {
+		trigger_event = rsfantasy_summon.0006
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+# --- Summon Warrior (race-specific, higher cost) ---
+summon_elf_warrior_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_elf_warrior_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0101 }
+	ai_will_do = { base = 0 }
+}
+summon_orc_warrior_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_orc_warrior_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0102 }
+	ai_will_do = { base = 0 }
+}
+summon_dwarf_warrior_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_dwarf_warrior_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0103 }
+	ai_will_do = { base = 0 }
+}
+summon_goblin_warrior_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_goblin_warrior_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0104 }
+	ai_will_do = { base = 0 }
+}
+summon_dark_elf_warrior_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_dark_elf_warrior_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0105 }
+	ai_will_do = { base = 0 }
+}
+summon_uruk_hai_warrior_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_uruk_hai_warrior_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0106 }
+	ai_will_do = { base = 0 }
+}
+
+# --- Summon Scholar (race-specific) ---
+summon_elf_scholar_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_elf_scholar_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0201 }
+	ai_will_do = { base = 0 }
+}
+summon_orc_scholar_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_orc_scholar_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0202 }
+	ai_will_do = { base = 0 }
+}
+summon_dwarf_scholar_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_dwarf_scholar_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0203 }
+	ai_will_do = { base = 0 }
+}
+summon_goblin_scholar_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_goblin_scholar_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0204 }
+	ai_will_do = { base = 0 }
+}
+summon_dark_elf_scholar_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_dark_elf_scholar_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0205 }
+	ai_will_do = { base = 0 }
+}
+summon_uruk_hai_scholar_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_uruk_hai_scholar_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 35 prestige >= 35 }
+	cost = { gold = 35 prestige = 35 }
+	effect = { trigger_event = rsfantasy_summon.0206 }
+	ai_will_do = { base = 0 }
+}
+
+# --- Summon a Creature (random race, warrior stats, higher cost) ---
+summon_creature_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" }
+	decision_group_type = minor
+	desc = summon_creature_decision_desc
+	ai_check_interval = 0
+	is_shown = { is_ai = no exists = capital_province }
+	is_valid = { is_ai = no gold >= 50 prestige >= 50 }
+	cost = { gold = 50 prestige = 50 }
+	effect = { trigger_event = rsfantasy_summon.0301 }
+	ai_will_do = { base = 0 }
+}

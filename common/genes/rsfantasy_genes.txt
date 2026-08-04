@@ -1,0 +1,148 @@
+# SFantasy Mod - Fantasy race genes (standalone)
+# Elf ears: bs_elf_ears from base game/Royal Court
+# Orc/Goblin/Dark Elf: skin tones via skin_hsv_shift_curve
+# Orc teeth (orc_teeth_*, beast_teeth_tusks): integrated from workshop mod
+#   source: E:\SteamLibrary\steamapps\workshop\content\1158310\2887120253\common\genes\ek_genes_teeth.txt
+
+morph_genes = {
+
+	# Orc skin: gray-olive, muted (not yellow, not bright green)
+	rsfantasy_gene_orc_skin = {
+		default_skin = {
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+		orc_green_skin = {
+			index = 1
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.20 0.05 -0.32 } }
+						{ 1.0   { 0.22 0.06 -0.26 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+	}
+
+	# Goblin skin: pale gray-olive, muted (not yellow, not bright green)
+	rsfantasy_gene_goblin_skin = {
+		default_skin = {
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+		goblin_green_skin = {
+			index = 1
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						{ 0.0   { 0.22 0.04 -0.22 } }
+						{ 1.0   { 0.24 0.05 -0.18 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+	}
+
+	# Uruk-Hai: dark blue-gray skin (#222729)
+	rsfantasy_gene_uruk_hai_skin = {
+		default_skin = {
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+		uruk_hai_gray_skin = {
+			index = 1
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						# Dark blue-gray #222729 (H 197, S ~17%, V ~16%)
+						{ 0.0   { 0.547 0.06 -0.55 } }
+						{ 1.0   { 0.547 0.08 -0.48 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+	}
+
+	# Dark Elf: dark blue-gray skin (#222729)
+	rsfantasy_gene_dark_elf_skin = {
+		default_skin = {
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+		dark_elf_gray_skin = {
+			index = 1
+			male = {
+				skin_hsv_shift_curve = {
+					curve = {
+						# Dark blue-gray #222729 (H 197, S ~17%, V ~16%)
+						{ 0.0   { 0.547 0.06 -0.55 } }
+						{ 1.0   { 0.547 0.08 -0.48 } }
+					}
+				}
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+	}
+
+	race_gene_elf_ears_1 = {
+		default_1 = {
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+		elf_ears_1 = {
+			index = 1
+			male = {
+				setting = { attribute = "bs_elf_ears"	value = { min = 0.0 max = 0.5 }	age = age_preset_child_features_wide_range }
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+	}
+
+	race_gene_elf_ears_2 = {
+		default_1 = {
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+		elf_ears_2 = {
+			index = 1
+			male = {
+				setting = { attribute = "bs_elf_ears"	value = { min = 0.0 max = 0.5 }	age = age_preset_child_features_wide_range }
+			}
+			female = male
+			boy = male
+			girl = male
+		}
+	}
+}

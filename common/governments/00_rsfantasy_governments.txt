@@ -1,0 +1,194 @@
+# SFantasy Mod - Fantasy race governments
+# All adoptable via decisions only (AI will never form)
+
+# Orcish Warband - Martial, prestige from battles, elective by prowess (feudal elective)
+orcish_warband_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = yes
+		legitimacy = yes
+	}
+
+	royal_court = any
+	fallback = 0
+
+	primary_holding = castle_holding
+	valid_holdings = { temple_citadel_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+
+	vassal_contract_group = feudal_vassal
+
+	can_get_government = {
+		OR = {
+			has_trait = rsfantasy_orc
+			has_trait = rsfantasy_uruk_hai
+		}
+	}
+
+	character_modifier = {
+		martial = 2
+		prowess = 1
+		monthly_prestige = 0.25
+		knight_effectiveness = 0.15
+		army_maintenance_mult = -0.1
+	}
+
+	ai = { use_legends = yes }
+
+	flags = {
+		government_is_feudal
+		government_is_settled
+		may_elevate_co_monarch
+		government_uses_crown_authority
+		government_uses_domain_limit
+		government_is_orcish_warband
+	}
+
+	mechanic_type = feudal
+	color = hsv{ 0.15 0.8 0.5 }
+	realm_mask_offset = { 0.0 0.01 }
+	realm_mask_scale = { 1 1 }
+}
+
+# Dwarven Hold - Stewardship focus, bonus from mountains, dynasty/lineage emphasis
+dwarven_hold_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = yes
+		legitimacy = yes
+	}
+
+	royal_court = any
+	fallback = 0
+
+	primary_holding = castle_holding
+	valid_holdings = { temple_citadel_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+
+	vassal_contract_group = feudal_vassal
+
+	can_get_government = {
+		has_trait = rsfantasy_dwarf
+	}
+
+	character_modifier = {
+		stewardship = 3
+		monthly_gold = 0.5
+	}
+
+	ai = { use_legends = yes }
+
+	flags = {
+		government_is_feudal
+		government_is_settled
+		may_elevate_co_monarch
+		government_uses_crown_authority
+		government_uses_domain_limit
+		government_is_dwarven_hold
+	}
+
+	mechanic_type = feudal
+	color = hsv{ 0.08 0.5 0.7 }
+	realm_mask_offset = { 0.0 0.01 }
+	realm_mask_scale = { 1 1 }
+}
+
+# Goblin Warren - Intrigue focus, vassal tricks, smaller denser domain
+goblin_warren_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = yes
+		legitimacy = yes
+	}
+
+	royal_court = any
+	fallback = 0
+
+	primary_holding = castle_holding
+	valid_holdings = { temple_citadel_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+
+	vassal_contract_group = feudal_vassal
+
+	can_get_government = {
+		has_trait = rsfantasy_goblin
+	}
+
+	character_modifier = {
+		intrigue = 3
+		scheme_success_chance = 0.05
+		hostile_scheme_resistance = 0.05
+	}
+
+	ai = { use_legends = yes }
+
+	flags = {
+		government_is_feudal
+		government_is_settled
+		may_elevate_co_monarch
+		government_uses_crown_authority
+		government_uses_domain_limit
+		government_is_goblin_warren
+	}
+
+	mechanic_type = feudal
+	color = hsv{ 0.25 0.7 0.55 }
+	realm_mask_offset = { 0.0 0.01 }
+	realm_mask_scale = { 1 1 }
+}
+
+# High Elvish Feudal - Elf/Dark Elf only
+high_elf_feudal_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = yes
+		legitimacy = yes
+	}
+
+	royal_court = any
+
+	fallback = 0
+
+	primary_holding = castle_holding
+	valid_holdings = { temple_citadel_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+
+	vassal_contract_group = feudal_vassal
+
+	can_get_government = {
+		OR = {
+			has_trait = rsfantasy_elf
+			has_trait = rsfantasy_dark_elf
+		}
+	}
+
+	character_modifier = {
+		learning = 1
+		monthly_prestige = 0.1
+		knight_effectiveness = 0.05
+		court_grandeur_gain_mult = 0.1
+	}
+
+	ai = {
+		use_legends = yes
+	}
+
+	flags = {
+		government_is_feudal
+		government_is_settled
+		may_elevate_co_monarch
+		government_uses_crown_authority
+		government_uses_domain_limit
+		government_is_high_elf_feudal
+	}
+
+	mechanic_type = feudal
+
+	color = hsv{ 0.45 0.5 0.9 }
+	realm_mask_offset = { 0.0 0.01 }
+	realm_mask_scale = { 1 1 }
+}
