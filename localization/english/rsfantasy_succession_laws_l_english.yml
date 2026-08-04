@@ -1,0 +1,5 @@
+l_english:
+	succ_rsfantasy_orcprowess:0 "Orcish Prowess Elective"
+	succ_rsfantasy_orcprowess_law:0 "Orcish Prowess Elective"
+	succ_rsfantasy_orcprowess_law_subname:0 "Orcish Warband"
+	succ_rsfantasy_orcprowess_law_effects:0 "The ruler and all direct vassals elect an heir from among the ruler's close family and title claimants, favoring those with highest [prowess|E]."

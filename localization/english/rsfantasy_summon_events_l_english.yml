@@ -1,0 +1,30 @@
+l_english:
+	rsfantasy_summon.0001.t:0 "Summon an Elf"
+	rsfantasy_summon.0001.desc:0 "You cast the rite to call an Elf to your court. Which gender do you wish to summon?"
+	rsfantasy_summon.0001.a:0 "Summon a male Elf"
+	rsfantasy_summon.0001.b:0 "Summon a female Elf"
+
+	rsfantasy_summon.0002.t:0 "Summon an Orc"
+	rsfantasy_summon.0002.desc:0 "You call forth an Orc warrior to your court. Which gender do you choose?"
+	rsfantasy_summon.0002.a:0 "Summon a male Orc"
+	rsfantasy_summon.0002.b:0 "Summon a female Orc"
+
+	rsfantasy_summon.0003.t:0 "Summon a Dwarf"
+	rsfantasy_summon.0003.desc:0 "You summon a Dwarf from the deep holds. Which gender do you select?"
+	rsfantasy_summon.0003.a:0 "Summon a male Dwarf"
+	rsfantasy_summon.0003.b:0 "Summon a female Dwarf"
+
+	rsfantasy_summon.0004.t:0 "Summon a Goblin"
+	rsfantasy_summon.0004.desc:0 "A Goblin steps from the shadows at your call. Which gender do you want?"
+	rsfantasy_summon.0004.a:0 "Summon a male Goblin"
+	rsfantasy_summon.0004.b:0 "Summon a female Goblin"
+
+	rsfantasy_summon.0005.t:0 "Summon a Dark Elf"
+	rsfantasy_summon.0005.desc:0 "You reach into the twilight to summon a Dark Elf. Which gender do you choose?"
+	rsfantasy_summon.0005.a:0 "Summon a male Dark Elf"
+	rsfantasy_summon.0005.b:0 "Summon a female Dark Elf"
+
+	rsfantasy_summon.0006.t:0 "Summon a Uruk-Hai"
+	rsfantasy_summon.0006.desc:0 "You call upon the Gray Host. Which gender do you summon?"
+	rsfantasy_summon.0006.a:0 "Summon a male Uruk-Hai"
+	rsfantasy_summon.0006.b:0 "Summon a female Uruk-Hai"
