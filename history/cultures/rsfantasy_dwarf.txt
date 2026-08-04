@@ -1,0 +1,4 @@
+# History file for Dwarven culture setup
+1.1.1 = {
+	discover_innovation = innovation_development_01
+}

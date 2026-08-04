@@ -1,0 +1,24 @@
+# RSFantasy Religion Icons Definition GFX
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_rsfantasy_elf_faith"
+		texturefile = "gfx/interface/icons/faith/rsfantasy_elf_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_rsfantasy_orc_faith"
+		texturefile = "gfx/interface/icons/faith/rsfantasy_orc_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_rsfantasy_dwarf_faith"
+		texturefile = "gfx/interface/icons/faith/rsfantasy_dwarf_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_rsfantasy_goblin_faith"
+		texturefile = "gfx/interface/icons/faith/rsfantasy_goblin_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_rsfantasy_dark_elf_faith"
+		texturefile = "gfx/interface/icons/faith/rsfantasy_dark_elf_faith.dds"
+	}
+}

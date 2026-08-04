@@ -1,0 +1,9 @@
+texticon = {
+	icon = rsfantasy_icon
+	iconspec = {
+		texture = "gfx/interface/icons/traits/rsfantasy_elf.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
