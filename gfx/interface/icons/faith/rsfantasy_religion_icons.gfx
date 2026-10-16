@@ -1,24 +1,51 @@
-# RSFantasy Religion Icons Definition GFX
+# SFantasy faith icons - unreformed and reformed (vanilla layout: gfx/interface/icons/faith)
 
-spriteTypes = {
-	spriteType = {
-		name = "GFX_rsfantasy_elf_faith"
-		texturefile = "gfx/interface/icons/faith/rsfantasy_elf_faith.dds"
-	}
-	spriteType = {
-		name = "GFX_rsfantasy_orc_faith"
-		texturefile = "gfx/interface/icons/faith/rsfantasy_orc_faith.dds"
-	}
-	spriteType = {
-		name = "GFX_rsfantasy_dwarf_faith"
-		texturefile = "gfx/interface/icons/faith/rsfantasy_dwarf_faith.dds"
-	}
-	spriteType = {
-		name = "GFX_rsfantasy_goblin_faith"
-		texturefile = "gfx/interface/icons/faith/rsfantasy_goblin_faith.dds"
-	}
-	spriteType = {
-		name = "GFX_rsfantasy_dark_elf_faith"
-		texturefile = "gfx/interface/icons/faith/rsfantasy_dark_elf_faith.dds"
-	}
+spriteType = {
+	name = "rsfantasy_elf_faith"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_elf_faith.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_elf_faith_reformed"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_elf_faith_reformed.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_orc_faith"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_orc_faith.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_orc_faith_reformed"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_orc_faith_reformed.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_dwarf_faith"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_dwarf_faith.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_dwarf_faith_reformed"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_dwarf_faith_reformed.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_goblin_faith"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_goblin_faith.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_goblin_faith_reformed"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_goblin_faith_reformed.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_dark_elf_faith"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_dark_elf_faith.dds"
+}
+
+spriteType = {
+	name = "rsfantasy_dark_elf_faith_reformed"
+	texturefile = "gfx/interface/icons/faith/rsfantasy_dark_elf_faith_reformed.dds"
 }

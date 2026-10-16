@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 	adopt_high_elvish_feudalism_decision:0 "Adopt High Elvish Feudalism"
 	adopt_high_elvish_feudalism_decision_desc:0 "Establish the ways of the elder folk as the foundation of your realm. Elves and Dark Elves who hold any [title|E] may adopt this government. You must have [feudal|E] or [clan|E] government. Change [succession|E] laws from the realm [succession|E] tab."
 	adopt_high_elvish_feudalism_decision_confirm:0 "Embrace the Elder Ways"

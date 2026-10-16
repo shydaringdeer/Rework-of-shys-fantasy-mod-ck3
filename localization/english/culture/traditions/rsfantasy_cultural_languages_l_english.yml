@@ -1,7 +1,8 @@
-l_english:
- language_rsfantasy_elf:0 "Elven"
- language_rsfantasy_orc:0 "Orcish"
- language_rsfantasy_dwarf:0 "Dwarven"
- language_rsfantasy_goblin:0 "Goblin"
- language_rsfantasy_dark_elf:0 "Dark Elven"
- language_rsfantasy_uruk_hai:0 "Uruk-Hai"
+﻿l_english:
+	#SFantasy languages - format matches game/culture/traditions/cultural_languages_l_english.yml
+	language_rsfantasy_elf_name:0 "Elvish"
+	language_rsfantasy_orc_name:0 "Orcish"
+	language_rsfantasy_dwarf_name:0 "Dwarvish"
+	language_rsfantasy_goblin_name:0 "Goblin"
+	language_rsfantasy_dark_elf_name:0 "Dark Elvish"
+	language_rsfantasy_uruk_hai_name:0 "Black Speech"

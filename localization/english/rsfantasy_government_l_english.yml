@@ -1,20 +1,38 @@
-l_english:
-	high_elf_feudal_government:0 "High Elvish Feudalism"
-	high_elf_feudal_government_adjective:0 "High Elvish"
-	high_elf_feudal_government_realm:0 "High Elvish Realm"
-	high_elf_feudal_government_desc:0 "A realm ruled under the ancient traditions of the Elven lords, emphasizing wisdom, martial grace, and prestige."
+﻿l_english:
+ # Succession laws (required for decision effect tooltips)
+ rsfantasy_elvish_eldest_succession_law:0 "Elvish Eldest"
+ rsfantasy_dwarven_lineage_succession_law:0 "Dwarven Lineage"
+ rsfantasy_orcish_prowess_elective_succession_law:0 "Orcish Prowess Elective"
+ rsfantasy_goblin_trickery_elective_succession_law:0 "Goblin Trickery Elective"
 
-	orcish_warband_government:0 "Orcish Warband"
-	orcish_warband_government_adjective:0 "Warband"
-	orcish_warband_government_realm:0 "Orcish Warband Realm"
-	orcish_warband_government_desc:0 "A realm forged in battle and ruled by the strongest warriors, focusing on martial prowess and conquest."
+ # High Elvish Feudal
+ high_elf_feudal_government:0 "High Elvish Feudal"
+ high_elf_feudal_government_with_icon:0 "@government_type_high_elf_feudal! $high_elf_feudal_government$"
+ high_elf_feudal_government_adjective:0 "High Elvish"
+ high_elf_feudal_government_realm:0 "High Elvish Realm"
+ high_elf_feudal_government_vassals_label:1 "High Elvish [obligations|E] are based on each [vassal|E]'s [vassal_contract|E]"
+ high_elf_feudal_government_desc:0 "A refined feudal order practiced by the elder folk. High Elvish realms blend ancient traditions with feudal obligations, valuing wisdom, prestige, and the long perspective of elvish rulers. Vassals swear oaths as in any feudal realm, but the court maintains an elvish character marked by patience and grace."
 
-	dwarven_hold_government:0 "Dwarven Hold"
-	dwarven_hold_government_adjective:0 "Dwarven"
-	dwarven_hold_government_realm:0 "Dwarven Hold Realm"
-	dwarven_hold_government_desc:0 "A underground fortress domain focused on stewardship, stonecraft, and ancient lineage."
+ # Orcish Warband
+ orcish_warband_government:0 "Orcish Warband"
+ orcish_warband_government_with_icon:0 "@government_type_orcish_warband! $orcish_warband_government$"
+ orcish_warband_government_adjective:0 "Orcish"
+ orcish_warband_government_realm:0 "Orcish Warband"
+ orcish_warband_government_vassals_label:1 "Orcish [obligations|E] are based on strength and martial prowess. The strongest lead."
+ orcish_warband_government_desc:0 "A martial order where the strongest rule. Orcish warbands prize prowess in battle, prestige from conquest, and elective succession—the war chief is chosen by the mightiest warriors. Vassals swear to follow the strongest, and the realm thrives on warfare and raiding."
 
-	goblin_warren_government:0 "Goblin Warren"
-	goblin_warren_government_adjective:0 "Goblin"
-	goblin_warren_government_realm:0 "Goblin Warren Realm"
-	goblin_warren_government_desc:0 "A dense and chaotic subterranean realm relying on intrigue, cunning tricks, and survival."
+ # Dwarven Hold
+ dwarven_hold_government:0 "Dwarven Hold"
+ dwarven_hold_government_with_icon:0 "@government_type_dwarven_hold! $dwarven_hold_government$"
+ dwarven_hold_government_adjective:0 "Dwarven"
+ dwarven_hold_government_realm:0 "Dwarven Hold"
+ dwarven_hold_government_vassals_label:1 "Dwarven [obligations|E] honor lineage and the forge. Mountain holdings are prized."
+ dwarven_hold_government_desc:0 "A realm founded on stewardship, craft, and lineage. Dwarven holds emphasize dynasty and bloodline, with rulers drawn from the oldest and most prestigious clans. Gold flows from mountain mines, and construction thrives under dwarven oversight."
+
+ # Goblin Warren
+ goblin_warren_government:0 "Goblin Warren"
+ goblin_warren_government_with_icon:0 "@government_type_goblin_warren! $goblin_warren_government$"
+ goblin_warren_government_adjective:0 "Goblin"
+ goblin_warren_government_realm:0 "Goblin Warren"
+ goblin_warren_government_vassals_label:1 "Goblin [obligations|E] are slippery. Intrigue and vassal tricks define the warren."
+ goblin_warren_government_desc:0 "A den of cunning and intrigue. Goblin warrens favor smaller, denser domains where scheming thrives. Vassals play tricks, schemes succeed more often, and the ruler maintains power through guile rather than brute force."

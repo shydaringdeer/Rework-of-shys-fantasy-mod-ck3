@@ -1,3 +1,4 @@
+# Applies permanent Immortal Blessing modifier (immortality is defined on the modifier).
 rsfantasy_grant_immortal_blessing_effect = {
 	if = {
 		limit = {
@@ -5,6 +6,22 @@ rsfantasy_grant_immortal_blessing_effect = {
 		}
 		add_character_modifier = {
 			modifier = rsfantasy_immortal_blessing
+			years = -1
 		}
+	}
+}
+
+# Call after summon setup (age + race traits). Long-lived races only get the blessing as adults.
+rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = {
+	if = {
+		limit = {
+			age >= 18
+			OR = {
+				has_trait = rsfantasy_elf
+				has_trait = rsfantasy_dwarf
+				has_trait = rsfantasy_dark_elf
+			}
+		}
+		rsfantasy_grant_immortal_blessing_effect = yes
 	}
 }

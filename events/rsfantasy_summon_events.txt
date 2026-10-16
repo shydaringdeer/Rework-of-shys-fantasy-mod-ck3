@@ -510,7 +510,7 @@ rsfantasy_summon.0062 = {
 	}
 }
 
-# Arrival event - notified when summoned courtier joins
+# Arrival event - notified when summoned courtier joins (root = player, scope:summoned_courtier = courtier)
 rsfantasy_summon.0100 = {
 	type = character_event
 	title = rsfantasy_summon_arrival_title
@@ -521,5 +521,777 @@ rsfantasy_summon.0100 = {
 
 	option = {
 		name = rsfantasy_summon_arrival_welcome
+	}
+}
+
+# ========== Summon Warrior (gender choice then create with rsfantasy_summoned_warrior) ==========
+rsfantasy_summon.0101 = {
+	type = character_event
+	title = rsfantasy_summon_elf_warrior_title
+	desc = rsfantasy_summon_elf_warrior_desc
+	theme = martial
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0111 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0112 days = 1 } }
+}
+rsfantasy_summon.0102 = {
+	type = character_event
+	title = rsfantasy_summon_orc_warrior_title
+	desc = rsfantasy_summon_orc_warrior_desc
+	theme = martial
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0121 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0122 days = 1 } }
+}
+rsfantasy_summon.0103 = {
+	type = character_event
+	title = rsfantasy_summon_dwarf_warrior_title
+	desc = rsfantasy_summon_dwarf_warrior_desc
+	theme = martial
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0131 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0132 days = 1 } }
+}
+rsfantasy_summon.0104 = {
+	type = character_event
+	title = rsfantasy_summon_goblin_warrior_title
+	desc = rsfantasy_summon_goblin_warrior_desc
+	theme = martial
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0141 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0142 days = 1 } }
+}
+rsfantasy_summon.0105 = {
+	type = character_event
+	title = rsfantasy_summon_dark_elf_warrior_title
+	desc = rsfantasy_summon_dark_elf_warrior_desc
+	theme = martial
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0151 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0152 days = 1 } }
+}
+rsfantasy_summon.0106 = {
+	type = character_event
+	title = rsfantasy_summon_uruk_hai_warrior_title
+	desc = rsfantasy_summon_uruk_hai_warrior_desc
+	theme = martial
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0161 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0162 days = 1 } }
+}
+
+# Elf Warrior create M/F
+rsfantasy_summon.0111 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_elf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_elf
+			faith = faith:rsfantasy_elf_faith
+			gender_female_chance = 0
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = {
+				rsfantasy_set_spawn_age_16_28 = yes
+				add_trait = rsfantasy_elf
+				add_trait = rsfantasy_summoned_warrior
+				rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+			}
+			root = {
+				add_courtier = scope:summoned_courtier
+				trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+			}
+		}
+	}
+}
+rsfantasy_summon.0112 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_elf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_elf
+			faith = faith:rsfantasy_elf_faith
+			gender_female_chance = 100
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = {
+				rsfantasy_set_spawn_age_16_28 = yes
+				add_trait = rsfantasy_elf
+				add_trait = rsfantasy_summoned_warrior
+				rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+			}
+			root = {
+				add_courtier = scope:summoned_courtier
+				trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+			}
+		}
+	}
+}
+# Orc Warrior
+rsfantasy_summon.0121 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_orc_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_orc
+			faith = faith:rsfantasy_orc_faith
+			gender_female_chance = 0
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = {
+				rsfantasy_set_spawn_age_16_28 = yes
+				set_character_culture = culture:rsfantasy_orc
+				set_faith = faith:rsfantasy_orc_faith
+				add_trait = rsfantasy_orc
+				add_trait = rsfantasy_summoned_warrior
+				rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+			}
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+rsfantasy_summon.0122 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_orc_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_orc
+			faith = faith:rsfantasy_orc_faith
+			gender_female_chance = 100
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = {
+				rsfantasy_set_spawn_age_16_28 = yes
+				set_character_culture = culture:rsfantasy_orc
+				set_faith = faith:rsfantasy_orc_faith
+				add_trait = rsfantasy_orc
+				add_trait = rsfantasy_summoned_warrior
+				rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+			}
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+# Dwarf Warrior
+rsfantasy_summon.0131 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_dwarf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_dwarf
+			faith = faith:rsfantasy_dwarf_faith
+			gender_female_chance = 0
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dwarf add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+rsfantasy_summon.0132 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_dwarf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_dwarf
+			faith = faith:rsfantasy_dwarf_faith
+			gender_female_chance = 100
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dwarf add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+# Goblin Warrior
+rsfantasy_summon.0141 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_goblin_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_goblin
+			faith = faith:rsfantasy_goblin_faith
+			gender_female_chance = 0
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_goblin add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+rsfantasy_summon.0142 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_goblin_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_goblin
+			faith = faith:rsfantasy_goblin_faith
+			gender_female_chance = 100
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_goblin add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+# Dark Elf Warrior
+rsfantasy_summon.0151 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_dark_elf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_dark_elf
+			faith = faith:rsfantasy_dark_elf_faith
+			gender_female_chance = 0
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dark_elf add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+rsfantasy_summon.0152 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_dark_elf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_dark_elf
+			faith = faith:rsfantasy_dark_elf_faith
+			gender_female_chance = 100
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dark_elf add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+# Uruk-Hai Warrior
+rsfantasy_summon.0161 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_uruk_hai_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_uruk_hai
+			faith = faith:rsfantasy_orc_faith
+			gender_female_chance = 0
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_uruk_hai add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+rsfantasy_summon.0162 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_uruk_hai_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_uruk_hai
+			faith = faith:rsfantasy_orc_faith
+			gender_female_chance = 100
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_uruk_hai add_trait = rsfantasy_summoned_warrior rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+
+# ========== Summon Scholar (gender choice then create with rsfantasy_summoned_scholar) ==========
+rsfantasy_summon.0201 = {
+	type = character_event
+	title = rsfantasy_summon_elf_scholar_title
+	desc = rsfantasy_summon_elf_scholar_desc
+	theme = learning
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0211 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0212 days = 1 } }
+}
+rsfantasy_summon.0202 = {
+	type = character_event
+	title = rsfantasy_summon_orc_scholar_title
+	desc = rsfantasy_summon_orc_scholar_desc
+	theme = learning
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0221 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0222 days = 1 } }
+}
+rsfantasy_summon.0203 = {
+	type = character_event
+	title = rsfantasy_summon_dwarf_scholar_title
+	desc = rsfantasy_summon_dwarf_scholar_desc
+	theme = learning
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0231 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0232 days = 1 } }
+}
+rsfantasy_summon.0204 = {
+	type = character_event
+	title = rsfantasy_summon_goblin_scholar_title
+	desc = rsfantasy_summon_goblin_scholar_desc
+	theme = learning
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0241 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0242 days = 1 } }
+}
+rsfantasy_summon.0205 = {
+	type = character_event
+	title = rsfantasy_summon_dark_elf_scholar_title
+	desc = rsfantasy_summon_dark_elf_scholar_desc
+	theme = learning
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0251 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0252 days = 1 } }
+}
+rsfantasy_summon.0206 = {
+	type = character_event
+	title = rsfantasy_summon_uruk_hai_scholar_title
+	desc = rsfantasy_summon_uruk_hai_scholar_desc
+	theme = learning
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0261 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0262 days = 1 } }
+}
+
+# Elf Scholar create
+rsfantasy_summon.0211 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_elf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_elf
+			faith = faith:rsfantasy_elf_faith
+			gender_female_chance = 0
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_elf add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+rsfantasy_summon.0212 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		create_character = {
+			template = rsfantasy_elf_summon_template
+			location = root.capital_province
+			culture = culture:rsfantasy_elf
+			faith = faith:rsfantasy_elf_faith
+			gender_female_chance = 100
+			save_scope_as = summoned_courtier
+		}
+		if = {
+			limit = { exists = scope:summoned_courtier }
+			scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_elf add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes }
+			root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } }
+		}
+	}
+}
+# Orc/Dwarf/Goblin/Dark Elf/Uruk-Hai Scholar - create (abbreviated)
+rsfantasy_summon.0221 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_orc_summon_template location = root.capital_province culture = culture:rsfantasy_orc faith = faith:rsfantasy_orc_faith gender_female_chance = 0 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_orc add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0222 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_orc_summon_template location = root.capital_province culture = culture:rsfantasy_orc faith = faith:rsfantasy_orc_faith gender_female_chance = 100 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_orc add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0231 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_dwarf_summon_template location = root.capital_province culture = culture:rsfantasy_dwarf faith = faith:rsfantasy_dwarf_faith gender_female_chance = 0 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dwarf add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0232 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_dwarf_summon_template location = root.capital_province culture = culture:rsfantasy_dwarf faith = faith:rsfantasy_dwarf_faith gender_female_chance = 100 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dwarf add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0241 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_goblin_summon_template location = root.capital_province culture = culture:rsfantasy_goblin faith = faith:rsfantasy_goblin_faith gender_female_chance = 0 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_goblin add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0242 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_goblin_summon_template location = root.capital_province culture = culture:rsfantasy_goblin faith = faith:rsfantasy_goblin_faith gender_female_chance = 100 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_goblin add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0251 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_dark_elf_summon_template location = root.capital_province culture = culture:rsfantasy_dark_elf faith = faith:rsfantasy_dark_elf_faith gender_female_chance = 0 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dark_elf add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0252 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_dark_elf_summon_template location = root.capital_province culture = culture:rsfantasy_dark_elf faith = faith:rsfantasy_dark_elf_faith gender_female_chance = 100 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_dark_elf add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0261 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_uruk_hai_summon_template location = root.capital_province culture = culture:rsfantasy_uruk_hai faith = faith:rsfantasy_orc_faith gender_female_chance = 0 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_uruk_hai add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+rsfantasy_summon.0262 = { type = character_event hidden = yes trigger = { exists = root.capital_province } immediate = { create_character = { template = rsfantasy_uruk_hai_summon_template location = root.capital_province culture = culture:rsfantasy_uruk_hai faith = faith:rsfantasy_orc_faith gender_female_chance = 100 save_scope_as = summoned_courtier } if = { limit = { exists = scope:summoned_courtier } scope:summoned_courtier = { rsfantasy_set_spawn_age_16_28 = yes add_trait = rsfantasy_uruk_hai add_trait = rsfantasy_summoned_scholar rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes } root = { add_courtier = scope:summoned_courtier trigger_event = { id = rsfantasy_summon.0100 days = 1 } } } } }
+
+# ========== Summon Creature (random race, warrior stats) ==========
+rsfantasy_summon.0301 = {
+	type = character_event
+	title = rsfantasy_summon_creature_title
+	desc = rsfantasy_summon_creature_desc
+	theme = martial
+
+	option = { name = rsfantasy_summon_male trigger_event = { id = rsfantasy_summon.0311 days = 1 } }
+	option = { name = rsfantasy_summon_female trigger_event = { id = rsfantasy_summon.0312 days = 1 } }
+}
+
+rsfantasy_summon.0311 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		random_list = {
+			16 = {
+				create_character = {
+					template = rsfantasy_elf_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_elf
+					faith = faith:rsfantasy_elf_faith
+					gender_female_chance = 0
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_elf
+						set_faith = faith:rsfantasy_elf_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_elf
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			16 = {
+				create_character = {
+					template = rsfantasy_orc_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_orc
+					faith = faith:rsfantasy_orc_faith
+					gender_female_chance = 0
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_orc
+						set_faith = faith:rsfantasy_orc_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_orc
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_dwarf_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_dwarf
+					faith = faith:rsfantasy_dwarf_faith
+					gender_female_chance = 0
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_dwarf
+						set_faith = faith:rsfantasy_dwarf_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_dwarf
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_goblin_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_goblin
+					faith = faith:rsfantasy_goblin_faith
+					gender_female_chance = 0
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_goblin
+						set_faith = faith:rsfantasy_goblin_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_goblin
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_dark_elf_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_dark_elf
+					faith = faith:rsfantasy_dark_elf_faith
+					gender_female_chance = 0
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_dark_elf
+						set_faith = faith:rsfantasy_dark_elf_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_dark_elf
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_uruk_hai_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_uruk_hai
+					faith = faith:rsfantasy_orc_faith
+					gender_female_chance = 0
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_uruk_hai
+						set_faith = faith:rsfantasy_orc_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_uruk_hai
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+		}
+	}
+}
+rsfantasy_summon.0312 = {
+	type = character_event
+	hidden = yes
+	trigger = { exists = root.capital_province }
+	immediate = {
+		random_list = {
+			16 = {
+				create_character = {
+					template = rsfantasy_elf_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_elf
+					faith = faith:rsfantasy_elf_faith
+					gender_female_chance = 100
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_elf
+						set_faith = faith:rsfantasy_elf_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_elf
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			16 = {
+				create_character = {
+					template = rsfantasy_orc_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_orc
+					faith = faith:rsfantasy_orc_faith
+					gender_female_chance = 100
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_orc
+						set_faith = faith:rsfantasy_orc_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_orc
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_dwarf_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_dwarf
+					faith = faith:rsfantasy_dwarf_faith
+					gender_female_chance = 100
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_dwarf
+						set_faith = faith:rsfantasy_dwarf_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_dwarf
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_goblin_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_goblin
+					faith = faith:rsfantasy_goblin_faith
+					gender_female_chance = 100
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_goblin
+						set_faith = faith:rsfantasy_goblin_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_goblin
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_dark_elf_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_dark_elf
+					faith = faith:rsfantasy_dark_elf_faith
+					gender_female_chance = 100
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_dark_elf
+						set_faith = faith:rsfantasy_dark_elf_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_dark_elf
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+			17 = {
+				create_character = {
+					template = rsfantasy_uruk_hai_summon_template
+					location = root.capital_province
+					culture = culture:rsfantasy_uruk_hai
+					faith = faith:rsfantasy_orc_faith
+					gender_female_chance = 100
+					save_scope_as = summoned_courtier
+				}
+				if = {
+					limit = { exists = scope:summoned_courtier }
+					scope:summoned_courtier = {
+						set_character_culture = culture:rsfantasy_uruk_hai
+						set_faith = faith:rsfantasy_orc_faith
+						rsfantasy_set_spawn_age_16_28 = yes
+						add_trait = rsfantasy_uruk_hai
+						add_trait = rsfantasy_summoned_warrior
+						rsfantasy_grant_immortal_blessing_if_longlived_adult_effect = yes
+					}
+					root = {
+						add_courtier = scope:summoned_courtier
+						trigger_event = { id = rsfantasy_summon.0100 days = 1 }
+					}
+				}
+			}
+		}
 	}
 }

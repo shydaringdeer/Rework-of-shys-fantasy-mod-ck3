@@ -1,38 +1,55 @@
-# Rework of Shy's Fantasy Mod (CK3)
+# rsfantasy – Rework of Shy's Fantasy
 
-Welcome to the **Rework of Shy's Fantasy**, a total overhaul/expansion mod for Crusader Kings III introducing high fantasy mechanics, magic systems, distinct fantasy races, and deep lore event chains.
-
----
-
-## 🌟 Key Features
-
-- 🧙 **Dynamic Magic System**: Learn spells, collect mana, and cast realm-altering spells or battlefield incantations.
-- 🧝 **Fantasy Races & Traits**: Play as or interact with Elves, Dwarves, Orcs, Vampires, and more, complete with long lifespans, custom physical traits, and racial passives.
-- 📜 **Rich Story Events**: Engage in arcane research, dungeon delving, dragon encounters, and holy order crusades against dark forces.
-- 🗡️ **Enchanting & Artifacts**: Forge legendary magic weapons, rings, and relics to empower your dynasty across generations.
-- 🎨 **Custom Interface**: Beautifully themed user interface components for spellbooks, mana trackers, and magic schools.
+Adds six fantasy races to Crusader Kings III with cultures, faiths, governments, and summon decisions. No half-breeds; traits use normal genetic inheritance.
 
 ---
 
-## 📁 Repository Structure
+## Races & Traits
+- **Elf** – Long-lived, learning and prowess bonuses, same-race opinion.
+- **Dark Elf** – Long-lived, intrigue-focused, shadow-touched.
+- **Orc** – Short-lived, martial and prowess focus.
+- **Uruk-Hai** – Bred-for-war orc variant, higher prowess/martial.
+- **Dwarf** – Extended lifespan, stewardship and martial focus.
+- **Goblin** – Short-lived, intrigue and stewardship, survivalist.
+- **Summoned Warrior** – +5 Prowess, +3 Martial (from summon decisions).
+- **Summoned Scholar** – +5 Learning, +2 Intrigue (from summon decisions).
+- All race traits use **inherit_chance** (normal genetics); no scripted birth logic.
 
-```
-rsfantasy/
-├── common/             # Definitions for traits, decisions, magic resources, script values
-├── events/             # Story, magic study, and encounter event scripts
-├── gfx/                # Custom textures, trait icons, event illustrations, and UI graphics
-├── gui/                # Custom GUI definitions (.gui files) for spellbook and mana UI
-├── history/            # Historical characters, titles, and realm setups
-├── localization/       # Text files and translations (English)
-├── CHANGELOG.md        # Version changelog and update history
-└── descriptor.mod      # Paradox Launcher mod metadata descriptor file
-```
+## Cultures & Names
+- One culture per race (heritage, language, name list).
+- Large name lists: many male, female, and dynasty names per culture.
+- Dynasty names are plain only (no “of …” / “of the …”).
+
+## Religions
+- One faith per race (e.g. Eldric for Elf) with holy orders.
+- Faith icons and localization for all.
+
+## Governments
+- **High Elvish Feudalism** – Elf and Dark Elf; county+.
+- **Orcish Warband** – Orc and Uruk-Hai; kingdom+.
+- **Dwarven Hold** – Dwarf; county+.
+- **Goblin Warren** – Goblin; kingdom+.
+- Adopt via **decisions** (player-only); requirements and descriptions updated.
+
+## Summon Decisions (player-only)
+- **Summon [Race] to Court** – Basic courtier (25 gold, 25 prestige) for each of the 6 races.
+- **Summon [Race] Warrior** – Combat-focused courtier with Summoned Warrior trait (35 gold, 35 prestige) per race.
+- **Summon [Race] Scholar** – Learning-focused courtier with Summoned Scholar trait (35 gold, 35 prestige) per race.
+- **Summon a Creature** – Random fantasy race warrior with Summoned Warrior trait (50 gold, 50 prestige).
+- Choose gender in an event; “Your Summons Has Arrived” when they join.
+- All summoned characters are created **aged 16–28**.
+
+## Appearance & UI
+- **Ethnicities and genes** for fantasy skin/appearance (e.g. orc, goblin, dark elf).
+- **Elf ears** – pointy-ear blend shape for Elf/Dark Elf portraits (head assets). Orc teeth override disabled; vanilla teeth used.
+- **Trait icons** for all six races plus Summoned Warrior and Summoned Scholar.
+- **Government type icons** in GUI (e.g. High Elvish Feudal, Orcish Warband).
+
+## Technical
+- No on_actions, scripted_effects, scripted_triggers, or opinion_modifier files; relies on base-game systems.
+- All content uses the **rsfantasy_** prefix.
+- Localization in English with UTF-8 BOM where needed.
 
 ---
 
-## 🛠️ Installation & Setup
-
-1. Copy or clone this directory into your Crusader Kings III mod directory:
-   - **Windows**: `Documents/Paradox Interactive/Crusader Kings III/mod/`
-2. Ensure `rsfantasy.mod` (or descriptor mapping) is placed alongside the mod folder.
-3. Open the Paradox Launcher, add the mod to your Playset, and launch the game.
+**Requires:** Crusader Kings III 1.18.x

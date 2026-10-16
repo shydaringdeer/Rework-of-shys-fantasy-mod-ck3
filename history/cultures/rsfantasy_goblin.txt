@@ -1,4 +1,36 @@
-# History file for Goblin culture setup
-1.1.1 = {
-	discover_innovation = innovation_development_01
+867.1.1 = {
+	# Light fortifications and mercenary focus
+	discover_innovation = innovation_motte
+	discover_innovation = innovation_barracks
+	discover_innovation = innovation_quilted_armor
+	discover_innovation = innovation_catapult
+
+	# Basic economy
+	discover_innovation = innovation_gavelkind
+	discover_innovation = innovation_crop_rotation
 }
+
+1066.1.1 = {
+	# Better organization but less developed than elves/dwarves
+	discover_innovation = innovation_mustering_grounds
+	discover_innovation = innovation_house_soldiers
+	discover_innovation = innovation_development_01
+	discover_innovation = innovation_city_planning
+}
+
+1150.1.1 = {
+	join_era = culture_era_high_medieval
+}
+
+1178.1.1 = {
+	# High medieval goblin advances: mobility, siege, and city life
+	discover_innovation = innovation_burhs
+	discover_innovation = innovation_horseshoes
+	discover_innovation = innovation_arched_saddle
+	discover_innovation = innovation_trebuchet
+
+	discover_innovation = innovation_heraldry
+	discover_innovation = innovation_guilds
+}
+
+

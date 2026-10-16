@@ -1,2 +1,14 @@
-l_english:
- rsfantasy_ethnicities:0 "Fantasy Ethnicities"
+﻿l_english:
+	# rsfantasy ethnicities — same key pattern as scffantasy scf_ethnicities_l_english.yml
+	rsfantasy_elf:0 "Elf"
+	rsfantasy_orc:0 "Orc"
+	rsfantasy_dwarf:0 "Dwarf"
+	rsfantasy_goblin:0 "Goblin"
+	rsfantasy_uruk_hai:0 "Uruk-Hai"
+	rsfantasy_dark_elf:0 "Dark Elf"
+	ethnicity_rsfantasy_elf:0 "Elf"
+	ethnicity_rsfantasy_orc:0 "Orc"
+	ethnicity_rsfantasy_dwarf:0 "Dwarf"
+	ethnicity_rsfantasy_goblin:0 "Goblin"
+	ethnicity_rsfantasy_uruk_hai:0 "Uruk-Hai"
+	ethnicity_rsfantasy_dark_elf:0 "Dark Elf"

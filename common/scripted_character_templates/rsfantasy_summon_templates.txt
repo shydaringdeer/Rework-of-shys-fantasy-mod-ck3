@@ -1,11 +1,63 @@
-rsfantasy_summon_warrior_template = {
-	age = { 18 35 }
-	martial = { 12 22 }
-	prowess = { 14 24 }
+# SFantasy - Character templates for summon decisions
+# Used by create_character to generate fantasy race courtiers with correct culture and faith
+# Summoned characters are aged between 16 and 28 (base game min_age / max_age)
+
+rsfantasy_elf_summon_template = {
+	fallback = default_template
+	culture = culture:rsfantasy_elf
+	faith = faith:rsfantasy_elf_faith
+
+	after_creation = {
+		add_trait = rsfantasy_elf
+	}
 }
 
-rsfantasy_summon_scholar_template = {
-	age = { 20 45 }
-	learning = { 14 24 }
-	stewardship = { 10 18 }
+rsfantasy_orc_summon_template = {
+	fallback = default_template
+	culture = culture:rsfantasy_orc
+	faith = faith:rsfantasy_orc_faith
+
+	after_creation = {
+		add_trait = rsfantasy_orc
+	}
+}
+
+rsfantasy_dwarf_summon_template = {
+	fallback = default_template
+	culture = culture:rsfantasy_dwarf
+	faith = faith:rsfantasy_dwarf_faith
+
+	after_creation = {
+		add_trait = rsfantasy_dwarf
+	}
+}
+
+rsfantasy_goblin_summon_template = {
+	fallback = default_template
+	culture = culture:rsfantasy_goblin
+	faith = faith:rsfantasy_goblin_faith
+
+	after_creation = {
+		add_trait = rsfantasy_goblin
+	}
+}
+
+rsfantasy_dark_elf_summon_template = {
+	fallback = default_template
+	culture = culture:rsfantasy_dark_elf
+	faith = faith:rsfantasy_dark_elf_faith
+
+	after_creation = {
+		add_trait = rsfantasy_dark_elf
+	}
+}
+
+rsfantasy_uruk_hai_summon_template = {
+	fallback = default_template
+	culture = culture:rsfantasy_uruk_hai
+	faith = faith:rsfantasy_orc_faith
+
+	after_creation = {
+		add_trait = rsfantasy_uruk_hai
+	}
 }

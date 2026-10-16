@@ -1,0 +1,86 @@
+# SFantasy Mod - Rites for each fantasy race
+
+rsfantasy_elf_rite = {
+	faith = rsfantasy_elf_faith
+
+	color = { 0.2 0.7 0.5 }
+	icon = rsfantasy_elf_faith
+
+	tenets = {
+		tenet_sacred_childbirth
+		tenet_ancestor_worship
+		tenet_communal_identity
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+}
+
+rsfantasy_orc_rite = {
+	faith = rsfantasy_orc_faith
+
+	color = { 0.2 0.5 0.3 }
+	icon = rsfantasy_orc_faith
+
+	tenets = {
+		tenet_warmonger
+		tenet_ancestor_worship
+		tenet_human_sacrifice
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+}
+
+rsfantasy_dwarf_rite = {
+	faith = rsfantasy_dwarf_faith
+
+	color = { 0.5 0.4 0.3 }
+	icon = rsfantasy_dwarf_faith
+
+	tenets = {
+		tenet_ancestor_worship
+		tenet_esotericism
+		tenet_communal_identity
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+}
+
+rsfantasy_goblin_rite = {
+	faith = rsfantasy_goblin_faith
+
+	color = { 0.35 0.55 0.35 }
+	icon = rsfantasy_goblin_faith
+
+	tenets = {
+		tenet_esotericism
+		tenet_ritual_cannibalism
+		tenet_ancestor_worship
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+}
+
+rsfantasy_dark_elf_rite = {
+	faith = rsfantasy_dark_elf_faith
+
+	color = { 0.5 0.3 0.5 }
+	icon = rsfantasy_dark_elf_faith
+
+	tenets = {
+		tenet_ritual_cannibalism
+		tenet_esotericism
+		tenet_communal_identity
+	}
+
+	doctrines = {
+		unreformed_faith_doctrine
+	}
+}

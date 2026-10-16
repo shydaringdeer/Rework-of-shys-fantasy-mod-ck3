@@ -1,4 +1,40 @@
-# History file for Orc culture setup
-1.1.1 = {
-	discover_innovation = innovation_development_01
+867.1.1 = {
+	# Strong early military focus
+	discover_innovation = innovation_motte
+	discover_innovation = innovation_barracks
+	discover_innovation = innovation_mustering_grounds
+	discover_innovation = innovation_quilted_armor
+	discover_innovation = innovation_catapult
+
+	# Simple succession and war focus
+	discover_innovation = innovation_gavelkind
+	discover_innovation = innovation_casus_belli
 }
+
+1066.1.1 = {
+	# Improved fortifications and siege
+	discover_innovation = innovation_battlements
+	discover_innovation = innovation_mangonel
+	discover_innovation = innovation_house_soldiers
+
+	# Early medieval military organization
+	discover_innovation = innovation_maa_professional
+}
+
+1150.1.1 = {
+	join_era = culture_era_high_medieval
+}
+
+1178.1.1 = {
+	# High medieval orc advances: pure warfare and rule by strength
+	discover_innovation = innovation_burhs
+	discover_innovation = innovation_horseshoes
+	discover_innovation = innovation_arched_saddle
+	discover_innovation = innovation_trebuchet
+	discover_innovation = innovation_castle_baileys
+
+	discover_innovation = innovation_hereditary_rule
+	discover_innovation = innovation_royal_prerogative
+}
+
+

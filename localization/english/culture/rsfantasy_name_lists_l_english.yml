@@ -1,7 +1,8 @@
-l_english:
- name_list_rsfantasy_elf:0 "Elven"
- name_list_rsfantasy_orc:0 "Orcish"
- name_list_rsfantasy_dwarf:0 "Dwarven"
- name_list_rsfantasy_goblin:0 "Goblin"
- name_list_rsfantasy_dark_elf:0 "Dark Elven"
- name_list_rsfantasy_uruk_hai:0 "Uruk-Hai"
+﻿l_english:
+	# Name list labels (for ruler designer etc)
+	name_list_rsfantasy_elf:0 "Elven"
+	name_list_rsfantasy_orc:0 "Orcish"
+	name_list_rsfantasy_dwarf:0 "Dwarven"
+	name_list_rsfantasy_goblin:0 "Goblin"
+	name_list_rsfantasy_dark_elf:0 "Dark Elvish"
+	name_list_rsfantasy_uruk_hai:0 "Uruk-Hai"

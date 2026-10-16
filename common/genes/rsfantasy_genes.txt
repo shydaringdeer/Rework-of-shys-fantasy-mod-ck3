@@ -1,4 +1,4 @@
-# SFantasy Mod - Fantasy race genes (standalone)
+﻿# SFantasy Mod - Fantasy race genes (standalone)
 # Elf ears: bs_elf_ears from base game/Royal Court
 # Orc/Goblin/Dark Elf: skin tones via skin_hsv_shift_curve
 # Orc teeth (orc_teeth_*, beast_teeth_tusks): integrated from workshop mod

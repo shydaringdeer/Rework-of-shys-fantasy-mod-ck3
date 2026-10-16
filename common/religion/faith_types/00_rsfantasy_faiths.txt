@@ -1,0 +1,91 @@
+# SFantasy Mod - Faiths for each fantasy race
+
+rsfantasy_elf_faith = {
+	main_rite = rsfantasy_elf_rite
+	faith_details = {
+		religion = rsfantasy_elf_religion
+		color = { 0.2 0.7 0.5 }
+		icon = rsfantasy_elf_faith
+		reformed_icon = rsfantasy_elf_faith_reformed
+	}
+	
+	eminent_holy_sites = {
+		rome
+		athens
+		alexandria
+		olympus
+		jerusalem
+	}
+}
+
+rsfantasy_orc_faith = {
+	main_rite = rsfantasy_orc_rite
+	faith_details = {
+		religion = rsfantasy_orc_religion
+		color = { 0.2 0.5 0.3 }
+		icon = rsfantasy_orc_faith
+		reformed_icon = rsfantasy_orc_faith_reformed
+	}
+	
+	eminent_holy_sites = {
+		uppsala
+		paderborn
+		jorvik
+		ranaheim
+		konugardr
+	}
+}
+
+rsfantasy_dwarf_faith = {
+	main_rite = rsfantasy_dwarf_rite
+	faith_details = {
+		religion = rsfantasy_dwarf_religion
+		color = { 0.5 0.4 0.3 }
+		icon = rsfantasy_dwarf_faith
+		reformed_icon = rsfantasy_dwarf_faith_reformed
+	}
+	
+	eminent_holy_sites = {
+		rome
+		cologne
+		constantinople
+		konugardr
+		uppsala
+	}
+}
+
+rsfantasy_goblin_faith = {
+	main_rite = rsfantasy_goblin_rite
+	faith_details = {
+		religion = rsfantasy_goblin_religion
+		color = { 0.35 0.55 0.35 }
+		icon = rsfantasy_goblin_faith
+		reformed_icon = rsfantasy_goblin_faith_reformed
+	}
+	
+	eminent_holy_sites = {
+		jorvik
+		ranaheim
+		paderborn
+		uppsala
+		kent
+	}
+}
+
+rsfantasy_dark_elf_faith = {
+	main_rite = rsfantasy_dark_elf_rite
+	faith_details = {
+		religion = rsfantasy_dark_elf_religion
+		color = { 0.5 0.3 0.5 }
+		icon = rsfantasy_dark_elf_faith
+		reformed_icon = rsfantasy_dark_elf_faith_reformed
+	}
+	
+	eminent_holy_sites = {
+		alexandria
+		constantinople
+		antioch
+		rome
+		athens
+	}
+}

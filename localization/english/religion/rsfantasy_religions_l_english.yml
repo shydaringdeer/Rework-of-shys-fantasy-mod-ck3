@@ -1,5 +1,5 @@
-l_english:
- # Elf Religion - Star-Bound; the Great Song, Light of the Trees, ancient lore
+﻿l_english:
+ # Elf Religion — Star-Bound; the Great Song, Light of the Trees, ancient lore
  rsfantasy_elf_religion:0 "Eldric Pantheon"
  rsfantasy_elf_religion_adj:0 "Eldric"
  rsfantasy_elf_religion_adherent:0 "Eldric"
@@ -12,6 +12,9 @@ l_english:
  rsfantasy_elf_faith_adherent_plural:0 "Eldric"
  rsfantasy_elf_faith_desc:0 "The Star-Bound revere the Great Song that shaped the world and the Light of the Trees that once lit the West. Patience and memory are prayer; the ancient spirits of wood and star still answer those who listen."
 
+ rsfantasy_elf_rite:0 "Eldric Rite"
+ rsfantasy_elf_rite_desc:0 "The core rites and practices of the Eldric Tradition."
+
  rsfantasy_elf_high_god_name:0 "the Great Song"
  rsfantasy_elf_high_god_name_possessive:0 "the Great Song's"
  rsfantasy_elf_good_god_1:0 "the Light of the Trees"
@@ -22,7 +25,7 @@ l_english:
  rsfantasy_elf_priest_plural:0 "loremasters"
  holy_order_rsfantasy_elf_guardians:0 "Guardians of the Wood"
 
- # Orc Religion - Iron-Blooded; forged for war, martial supremacy, dominate the soil
+ # Orc Religion — Iron-Blooded; forged for war, martial supremacy, dominate the soil
  rsfantasy_orc_religion:0 "Warfather's Creed"
  rsfantasy_orc_religion_adj:0 "Warfather"
  rsfantasy_orc_religion_adherent:0 "Warfather"
@@ -35,6 +38,9 @@ l_english:
  rsfantasy_orc_faith_adherent_plural:0 "Warfathers"
  rsfantasy_orc_faith_desc:0 "The Iron-Blooded honour the one who forged them for the friction of war. Dominance of the land is holy; the weak are culled and the strong exalted. The ancestors watch from the war-halls of the dead."
 
+ rsfantasy_orc_rite:0 "Warfather Rite"
+ rsfantasy_orc_rite_desc:0 "The core rites and practices of the Warfather Tradition."
+
  rsfantasy_orc_high_god_name:0 "the Warfather"
  rsfantasy_orc_high_god_name_possessive:0 "the Warfather's"
  rsfantasy_orc_religious_symbol:0 "war totem"
@@ -42,7 +48,7 @@ l_english:
  rsfantasy_orc_priest_plural:0 "shamans"
  holy_order_rsfantasy_orc_warband:0 "Chosen Warband"
 
- # Dwarf Religion - Deep-Rooted; stone, flint and ozone, logistics of empire, stewards of tradition
+ # Dwarf Religion — Deep-Rooted; stone, flint and ozone, logistics of empire, stewards of tradition
  rsfantasy_dwarf_religion:0 "Forgefather's Faith"
  rsfantasy_dwarf_religion_adj:0 "Forgefather"
  rsfantasy_dwarf_religion_adherent:0 "Forgefather"
@@ -53,6 +59,9 @@ l_english:
  rsfantasy_dwarf_faith_adj:0 "Forgefather"
  rsfantasy_dwarf_faith_adherent:0 "Forgefather"
  rsfantasy_dwarf_faith_adherent_plural:0 "Forgefathers"
+
+ rsfantasy_dwarf_rite:0 "Forgefather Rite"
+ rsfantasy_dwarf_rite_desc:0 "The core rites and practices of the Forgefather Tradition."
  rsfantasy_dwarf_faith_desc:0 "The Deep-Rooted revere the maker of the deep places and the wealth of the earth. Honour the stone, the forge, and the lineage that built the first halls. To hold the mountain is to hold the faith."
 
  rsfantasy_dwarf_high_god_name:0 "the Forgefather"
@@ -62,7 +71,7 @@ l_english:
  rsfantasy_dwarf_priest_plural:0 "runesmiths"
  holy_order_rsfantasy_dwarf_guard:0 "Guardians of the Deep"
 
- # Goblin Religion - Hollow-Kin; scavenger's brilliance, disadvantage as weapon, survival
+ # Goblin Religion — Hollow-Kin; scavenger's brilliance, disadvantage as weapon, survival
  rsfantasy_goblin_religion:0 "Trickster's Pact"
  rsfantasy_goblin_religion_adj:0 "Trickster"
  rsfantasy_goblin_religion_adherent:0 "Trickster"
@@ -73,6 +82,9 @@ l_english:
  rsfantasy_goblin_faith_adj:0 "Trickster"
  rsfantasy_goblin_faith_adherent:0 "Trickster"
  rsfantasy_goblin_faith_adherent_plural:0 "Tricksters"
+
+ rsfantasy_goblin_rite:0 "Trickster Rite"
+ rsfantasy_goblin_rite_desc:0 "The core rites and practices of the Trickster Tradition."
  rsfantasy_goblin_faith_desc:0 "The Hollow-Kin honour the Trickster who gave them their frantic, scavenger's brilliance. Take what you can; turn every disadvantage into a weapon. Those the world despises still outlast the proud."
 
  rsfantasy_goblin_high_god_name:0 "the Trickster"
@@ -82,7 +94,7 @@ l_english:
  rsfantasy_goblin_priest_plural:0 "hexers"
  holy_order_rsfantasy_goblin_skulkers:0 "Shadow Skulkers"
 
- # Dark Elf Religion - Twilight-Exiled; abyss secrets, predatory elegance, ancient betrayals
+ # Dark Elf Religion — Twilight-Exiled; abyss secrets, predatory elegance, ancient betrayals
  rsfantasy_dark_elf_religion:0 "Twilight Covenant"
  rsfantasy_dark_elf_religion_adj:0 "Twilight"
  rsfantasy_dark_elf_religion_adherent:0 "Twilight"
@@ -93,6 +105,9 @@ l_english:
  rsfantasy_dark_elf_faith_adj:0 "Twilight"
  rsfantasy_dark_elf_faith_adherent:0 "Twilight"
  rsfantasy_dark_elf_faith_adherent_plural:0 "Twilight-bound"
+
+ rsfantasy_dark_elf_rite:0 "Twilight Rite"
+ rsfantasy_dark_elf_rite_desc:0 "The core rites and practices of the Twilight Tradition."
  rsfantasy_dark_elf_faith_desc:0 "The Twilight-Exiled serve the Queen who rules the abyss and the unseen. Prove your worth through elegance and cruelty; the halls of power belong to those who move in shadow."
 
  rsfantasy_dark_elf_high_god_name:0 "the Queen of the Veil"

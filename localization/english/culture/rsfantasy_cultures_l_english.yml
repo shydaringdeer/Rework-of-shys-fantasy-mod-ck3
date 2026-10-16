@@ -1,7 +1,20 @@
-l_english:
+﻿l_english:
+	#SFantasy cultures - format matches game/culture/cultures_l_english.yml
 	rsfantasy_elf:0 "Elven"
+	rsfantasy_elf_prefix:0 "Elven"
+	rsfantasy_elf_collective_noun:1 "Elves"
 	rsfantasy_orc:0 "Orcish"
+	rsfantasy_orc_prefix:0 "Orcish"
+	rsfantasy_orc_collective_noun:1 "Orcs"
 	rsfantasy_dwarf:0 "Dwarven"
+	rsfantasy_dwarf_prefix:0 "Dwarven"
+	rsfantasy_dwarf_collective_noun:1 "Dwarves"
 	rsfantasy_goblin:0 "Goblin"
-	rsfantasy_dark_elf:0 "Dark Elven"
+	rsfantasy_goblin_prefix:0 "Goblin"
+	rsfantasy_goblin_collective_noun:1 "Goblins"
+	rsfantasy_dark_elf:0 "Dark Elvish"
+	rsfantasy_dark_elf_prefix:0 "Dark Elvish"
+	rsfantasy_dark_elf_collective_noun:1 "Dark Elves"
 	rsfantasy_uruk_hai:0 "Uruk-Hai"
+	rsfantasy_uruk_hai_prefix:0 "Uruk-Hai"
+	rsfantasy_uruk_hai_collective_noun:1 "Uruk-Hai"

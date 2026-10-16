@@ -1,8 +1,39 @@
+# Use vanilla icon to avoid possible freeze when opening character window (custom DDS was suspected)
 texticon = {
-	icon = rsfantasy_icon
-	iconspec = {
-		texture = "gfx/interface/icons/traits/rsfantasy_elf.dds"
-		size = { 25 25 }
+	icon = government_type_high_elf_feudal
+	iconsize = {
+		texture = "gfx/interface/icons/government_types/feudal_government.dds"
+		size = { 28 28 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = government_type_orcish_warband
+	iconsize = {
+		texture = "gfx/interface/icons/government_types/tribal_government.dds"
+		size = { 28 28 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = government_type_dwarven_hold
+	iconsize = {
+		texture = "gfx/interface/icons/government_types/feudal_government.dds"
+		size = { 28 28 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = government_type_goblin_warren
+	iconsize = {
+		texture = "gfx/interface/icons/government_types/feudal_government.dds"
+		size = { 28 28 }
 		offset = { 0 6 }
 		fontsize = 16
 	}

@@ -2,9 +2,11 @@
 # Uses pagan family, each race has its own faith with appropriate tenets
 
 rsfantasy_elf_religion = {
-	family = rf_pagan
-	piety_icon_group = pagan
-	graphical_faith = pagan_gfx
+	religion_details = {
+		family = rf_pagan
+		piety_icon_group = pagan
+		graphical_faith = "pagan_gfx"
+	}
 	pagan_roots = yes
 	doctrine = pagan_hostility_doctrine
 
@@ -31,7 +33,18 @@ rsfantasy_elf_religion = {
 	doctrine = doctrine_funeral_bewailment
 	doctrine = doctrine_no_anointment
 
-	traits = { virtues = { temperate just patient } sins = { greedy arbitrary wrathful } }
+	traits = { 
+		virtues = { 
+			temperate = { weight = 20 scale = 1 }
+			just = { weight = 20 scale = 1 }
+			patient = { weight = 20 scale = 1 }
+		} 
+		sins = { 
+			greedy = { weight = 20 scale = 1 }
+			arbitrary = { weight = 20 scale = 1 }
+			wrathful = { weight = 20 scale = 1 }
+		} 
+	}
 
 	custom_faith_icons = {
 		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5
@@ -84,28 +97,14 @@ rsfantasy_elf_religion = {
 		GHWNamePlural = ghw_great_holy_wars
 	}
 
-	faiths = {
-		rsfantasy_elf_faith = {
-			color = hsv { 0.2 0.7 0.5 }
-			icon = rsfantasy_elf_faith
-			reformed_icon = rsfantasy_elf_faith_reformed
-			holy_site = rome
-			holy_site = athens
-			holy_site = alexandria
-			holy_site = olympus
-			holy_site = jerusalem
-			doctrine = unreformed_faith_doctrine
-			doctrine = tenet_sacred_childbirth
-			doctrine = tenet_ancestor_worship
-			doctrine = tenet_communal_identity
-		}
-	}
 }
 
 rsfantasy_orc_religion = {
-	family = rf_pagan
-	piety_icon_group = pagan
-	graphical_faith = pagan_gfx
+	religion_details = {
+		family = rf_pagan
+		piety_icon_group = pagan
+		graphical_faith = "pagan_gfx"
+	}
 	pagan_roots = yes
 	doctrine = pagan_hostility_doctrine
 
@@ -132,7 +131,18 @@ rsfantasy_orc_religion = {
 	doctrine = doctrine_funeral_cremation
 	doctrine = doctrine_no_anointment
 
-	traits = { virtues = { brave wrathful zealous } sins = { craven forgiving compassionate } }
+	traits = { 
+		virtues = { 
+			brave = { weight = 20 scale = 1 }
+			wrathful = { weight = 20 scale = 1 }
+			zealous = { weight = 20 scale = 1 }
+		} 
+		sins = { 
+			craven = { weight = 20 scale = 1 }
+			forgiving = { weight = 20 scale = 1 }
+			compassionate = { weight = 20 scale = 1 }
+		} 
+	}
 
 	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
 
@@ -156,28 +166,14 @@ rsfantasy_orc_religion = {
 		GHWNamePlural = ghw_great_holy_wars
 	}
 
-	faiths = {
-		rsfantasy_orc_faith = {
-			color = hsv { 0.2 0.5 0.3 }
-			icon = rsfantasy_orc_faith
-			reformed_icon = rsfantasy_orc_faith_reformed
-			holy_site = uppsala
-			holy_site = paderborn
-			holy_site = jorvik
-			holy_site = ranaheim
-			holy_site = konugardr
-			doctrine = unreformed_faith_doctrine
-			doctrine = tenet_warmonger
-			doctrine = tenet_ancestor_worship
-			doctrine = tenet_human_sacrifice
-		}
-	}
 }
 
 rsfantasy_dwarf_religion = {
-	family = rf_pagan
-	piety_icon_group = pagan
-	graphical_faith = pagan_gfx
+	religion_details = {
+		family = rf_pagan
+		piety_icon_group = pagan
+		graphical_faith = "pagan_gfx"
+	}
 	pagan_roots = yes
 	doctrine = pagan_hostility_doctrine
 
@@ -203,7 +199,18 @@ rsfantasy_dwarf_religion = {
 	doctrine = doctrine_funeral_cremation
 	doctrine = doctrine_no_anointment
 
-	traits = { virtues = { diligent temperate stubborn } sins = { greedy lazy gluttonous } }
+	traits = { 
+		virtues = { 
+			diligent = { weight = 20 scale = 1 }
+			temperate = { weight = 20 scale = 1 }
+			stubborn = { weight = 20 scale = 1 }
+		} 
+		sins = { 
+			greedy = { weight = 20 scale = 1 }
+			lazy = { weight = 20 scale = 1 }
+			gluttonous = { weight = 20 scale = 1 }
+		} 
+	}
 
 	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
 
@@ -227,28 +234,14 @@ rsfantasy_dwarf_religion = {
 		GHWNamePlural = ghw_great_holy_wars
 	}
 
-	faiths = {
-		rsfantasy_dwarf_faith = {
-			color = hsv { 0.5 0.4 0.3 }
-			icon = rsfantasy_dwarf_faith
-			reformed_icon = rsfantasy_dwarf_faith_reformed
-			holy_site = rome
-			holy_site = cologne
-			holy_site = constantinople
-			holy_site = konugardr
-			holy_site = uppsala
-			doctrine = unreformed_faith_doctrine
-			doctrine = tenet_ancestor_worship
-			doctrine = tenet_esotericism
-			doctrine = tenet_communal_identity
-		}
-	}
 }
 
 rsfantasy_goblin_religion = {
-	family = rf_pagan
-	piety_icon_group = pagan
-	graphical_faith = pagan_gfx
+	religion_details = {
+		family = rf_pagan
+		piety_icon_group = pagan
+		graphical_faith = "pagan_gfx"
+	}
 	pagan_roots = yes
 	doctrine = pagan_hostility_doctrine
 
@@ -275,7 +268,18 @@ rsfantasy_goblin_religion = {
 	doctrine = doctrine_funeral_burial
 	doctrine = doctrine_no_anointment
 
-	traits = { virtues = { cynical greedy ambitious } sins = { compassionate just content } }
+	traits = { 
+		virtues = { 
+			cynical = { weight = 20 scale = 1 }
+			greedy = { weight = 20 scale = 1 }
+			ambitious = { weight = 20 scale = 1 }
+		} 
+		sins = { 
+			compassionate = { weight = 20 scale = 1 }
+			just = { weight = 20 scale = 1 }
+			content = { weight = 20 scale = 1 }
+		} 
+	}
 
 	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
 
@@ -299,28 +303,14 @@ rsfantasy_goblin_religion = {
 		GHWNamePlural = ghw_great_holy_wars
 	}
 
-	faiths = {
-		rsfantasy_goblin_faith = {
-			color = hsv { 0.35 0.55 0.35 }
-			icon = rsfantasy_goblin_faith
-			reformed_icon = rsfantasy_goblin_faith_reformed
-			holy_site = jorvik
-			holy_site = ranaheim
-			holy_site = paderborn
-			holy_site = uppsala
-			holy_site = kent
-			doctrine = unreformed_faith_doctrine
-			doctrine = tenet_esotericism
-			doctrine = tenet_ritual_cannibalism
-			doctrine = tenet_ancestor_worship
-		}
-	}
 }
 
 rsfantasy_dark_elf_religion = {
-	family = rf_pagan
-	piety_icon_group = pagan
-	graphical_faith = pagan_gfx
+	religion_details = {
+		family = rf_pagan
+		piety_icon_group = pagan
+		graphical_faith = "pagan_gfx"
+	}
 	pagan_roots = yes
 	doctrine = pagan_hostility_doctrine
 
@@ -347,7 +337,18 @@ rsfantasy_dark_elf_religion = {
 	doctrine = doctrine_funeral_bewailment
 	doctrine = doctrine_no_anointment
 
-	traits = { virtues = { cynical deceitful ambitious } sins = { compassionate forgiving honest } }
+	traits = { 
+		virtues = { 
+			cynical = { weight = 20 scale = 1 }
+			deceitful = { weight = 20 scale = 1 }
+			ambitious = { weight = 20 scale = 1 }
+		} 
+		sins = { 
+			compassionate = { weight = 20 scale = 1 }
+			forgiving = { weight = 20 scale = 1 }
+			honest = { weight = 20 scale = 1 }
+		} 
+	}
 
 	custom_faith_icons = { custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 }
 
@@ -371,20 +372,4 @@ rsfantasy_dark_elf_religion = {
 		GHWNamePlural = ghw_great_holy_wars
 	}
 
-	faiths = {
-		rsfantasy_dark_elf_faith = {
-			color = hsv { 0.5 0.3 0.5 }
-			icon = rsfantasy_dark_elf_faith
-			reformed_icon = rsfantasy_dark_elf_faith_reformed
-			holy_site = alexandria
-			holy_site = constantinople
-			holy_site = antioch
-			holy_site = rome
-			holy_site = athens
-			doctrine = unreformed_faith_doctrine
-			doctrine = tenet_ritual_cannibalism
-			doctrine = tenet_esotericism
-			doctrine = tenet_communal_identity
-		}
-	}
 }

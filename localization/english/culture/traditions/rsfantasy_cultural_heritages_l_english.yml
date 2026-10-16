@@ -1,7 +1,14 @@
-l_english:
- heritage_rsfantasy_elf:0 "Elven"
- heritage_rsfantasy_orc:0 "Orcish"
- heritage_rsfantasy_dwarf:0 "Dwarven"
- heritage_rsfantasy_goblin:0 "Goblin"
- heritage_rsfantasy_dark_elf:0 "Dark Elven"
- heritage_rsfantasy_uruk_hai:0 "Uruk-Hai"
+﻿l_english:
+	#SFantasy heritages - format matches game/culture/traditions/cultural_heritages_l_english.yml
+	heritage_rsfantasy_elf_name:0 "Elven"
+	heritage_rsfantasy_elf_collective_noun:0 "Elves"
+	heritage_rsfantasy_orc_name:0 "Orcish"
+	heritage_rsfantasy_orc_collective_noun:0 "Orcs"
+	heritage_rsfantasy_dwarf_name:0 "Dwarven"
+	heritage_rsfantasy_dwarf_collective_noun:0 "Dwarves"
+	heritage_rsfantasy_goblin_name:0 "Goblin"
+	heritage_rsfantasy_goblin_collective_noun:0 "Goblins"
+	heritage_rsfantasy_dark_elf_name:0 "Dark Elvish"
+	heritage_rsfantasy_dark_elf_collective_noun:0 "Dark Elves"
+	heritage_rsfantasy_uruk_hai_name:0 "Uruk-Hai"
+	heritage_rsfantasy_uruk_hai_collective_noun:0 "Uruk-Hai"
